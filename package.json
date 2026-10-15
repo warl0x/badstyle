@@ -1,0 +1,22 @@
+{
+  "name": "badstyle-photography",
+  "version": "1.0.0",
+  "description": "Creative editorial photography portfolio for Badstyle Photography. Built in the exact style of the Pheebs template by Elemis.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve . -l 3000",
+    "dev": "npx serve . -l 3000",
+    "scrape:blog": "node scripts/scrape_boudoir_blog.js"
+  },
+  "keywords": [
+    "photography",
+    "portfolio",
+    "badstyle",
+    "pheebs",
+    "editorial",
+    "fashion",
+    "still-life"
+  ],
+  "author": "Badstyle Photography",
+  "license": "MIT"
+}

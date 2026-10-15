@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <title>Badstyle — Creative Photography &amp; Visual Direction</title>
+  <meta name="description" content="A bold, elegant editorial portfolio template for photographers and visual creatives. Showcasing People &amp; Portrait, Advertorial campaigns, and Still Life imagery." />
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Badstyle — Creative Photography &amp; Visual Direction" />
+  <meta property="og:description" content="A bold, elegant editorial portfolio template for photographers and visual creatives." />
+  <meta property="og:image" content="images/portraits/badstyle-8374.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Badstyle — Creative Photography &amp; Visual Direction" />
+  <meta name="twitter:description" content="A bold, elegant editorial portfolio template for photographers and visual creatives." />
+  <meta name="twitter:image" content="images/portraits/badstyle-8374.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22serif%22 font-weight=%22bold%22>B</text></svg>" />
+
+  <!-- Fonts & Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app-shell">
+    
+    <!-- Top Navigation Bar -->
+    <header class="navbar" role="banner">
+      <a href="#portrait" class="brand-logo" aria-label="Badstyle Photography Home">
+        BADSTYLE<span class="dot">.</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#portrait" class="nav-link active">People &amp; Portrait</a></li>
+          <li class="nav-item"><a href="#advertorial" class="nav-link">Advertorial</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience &amp; Pricing</a></li>
+          <li class="nav-item"><a href="#shop" class="nav-link">Shop</a></li>
+          <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Book Session</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Layout Switcher Button (Horizontal Flow vs Grid) -->
+        <button id="layout-toggle-btn" class="action-btn layout-toggle" aria-label="Switch to Grid View" title="Switch to Grid View">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+        </button>
+
+        <!-- Theme Toggle Button (Light / Dark) -->
+        <button id="theme-toggle-btn" class="action-btn theme-toggle" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobile-toggle-btn" class="mobile-toggle" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+      <ul class="mobile-nav-links">
+        <li><a href="#portrait" class="mobile-nav-link">People &amp; Portrait</a></li>
+        <li><a href="#advertorial" class="mobile-nav-link">Advertorial</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience &amp; Pricing</a></li>
+        <li><a href="#shop" class="mobile-nav-link">Shop</a></li>
+        <li><a href="#blog" class="mobile-nav-link">Blog</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Book Session</a></li>
+      </ul>
+
+      <div class="mobile-drawer-footer">
+        <div class="mobile-actions-row">
+          <button id="mobile-theme-btn" class="action-btn" aria-label="Toggle theme">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <span style="font-size: 0.85rem; color: var(--text-secondary);">Badstyle Photography</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="main-content" role="main">
+
+      <!-- VIEW 1: PEOPLE & PORTRAIT -->
+      <section id="view-portrait" class="page-view active" aria-label="People and Portrait Gallery">
+        <div class="gallery-viewport">
+          <div class="horizontal-track" role="region" aria-label="Horizontal image flow"></div>
+          <div class="grid-container" role="region" aria-label="Editorial grid view"></div>
+        </div>
+      </section>
+
+      <!-- VIEW 2: ADVERTORIAL -->
+      <section id="view-advertorial" class="page-view" aria-label="Advertorial Work Gallery">
+        <div class="gallery-viewport">
+          <div class="horizontal-track" role="region" aria-label="Horizontal image flow"></div>
+          <div class="grid-container" role="region" aria-label="Editorial grid view"></div>
+        </div>
+      </section>
+
+      <!-- VIEW: THE CLIENT EXPERIENCE & INVESTMENT -->
+      <section id="view-experience" class="page-view" aria-label="The Client Experience and Investment Collections">
+        <div class="experience-container">
+          
+          <!-- Experience Hero -->
+          <div class="section-hero">
+            <span class="hero-tag">The 4-Step Transformation</span>
+            <h1 class="section-hero-title">The Client Experience</h1>
+            <p class="section-hero-sub">
+              From our first styling consultation to holding custom Italian museum-grade art in your hands, every step is engineered to make you feel effortless, protected, and fiercely magnetic.
+            </p>
+          </div>
+
+          <!-- 4-Step Transformation Cards Grid -->
+          <div id="experience-steps-grid" class="experience-steps-grid"></div>
+
+          <!-- Investment & Collections Pricing Section -->
+          <div class="investment-section" id="investment-section">
+            <div class="section-hero center-align">
+              <span class="hero-tag">Transparent Luxury Pricing</span>
+              <h2 class="section-hero-title">Investment &amp; Collections</h2>
+              <p class="section-hero-sub">
+                Honest, all-inclusive luxury portrait collections. Every package includes dedicated hair and makeup artistry, generous fine art print credits, and zero hidden costs.
+              </p>
+            </div>
+
+            <!-- 3-Tier Pricing Cards Grid -->
+            <div id="investment-tiers-grid" class="pricing-tiers-grid"></div>
+            
+            <div class="pricing-guarantee-badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              <span>Zero High-Pressure Sales · Transparent Pricing · Complete Confidentiality Guaranteed</span>
+            </div>
+          </div>
+
+          <!-- Client Guide & FAQs Section -->
+          <div class="client-guide-section">
+            <div class="section-hero center-align">
+              <span class="hero-tag">Client Guide</span>
+              <h2 class="section-hero-title">Frequently Asked Questions</h2>
+              <p class="section-hero-sub">
+                Clear, honest answers regarding privacy &amp; NDAs, posing nervousness, non-lingerie wardrobe alternatives, and natural skin retouching.
+              </p>
+            </div>
+
+            <div id="experience-faq-list" class="accordion-list"></div>
+          </div>
+
+          <!-- Call to Action Banner -->
+          <div class="experience-cta-card">
+            <h3 class="cta-title">Ready for Your Transformation?</h3>
+            <p class="cta-sub">Sessions are limited to one client per day to ensure complete privacy and undivided creative attention.</p>
+            <a href="#contact" class="submit-btn">Reserve Your Date</a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- VIEW: BADSTYLE REDBUBBLE SHOP -->
+      <section id="view-shop" class="page-view" aria-label="Badstyle Redbubble Art and Merch Shop">
+        <div class="shop-container">
+          
+          <!-- Shop Hero -->
+          <div class="section-hero">
+            <span class="hero-tag">Official Store · Badsty1e</span>
+            <h1 class="section-hero-title">Art &amp; Merch Shop</h1>
+            <p class="section-hero-sub">
+              Original graphic art prints, street-style apparel, holographic stickers, and limited edition wall art created by badsty1e. Printed and shipped worldwide on museum-grade stock via Redbubble.
+            </p>
+            <div class="shop-hero-badge-row">
+              <a href="https://www.redbubble.com/people/badsty1e/shop" target="_blank" rel="noopener noreferrer" class="redbubble-store-pill">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/>
+                </svg>
+                <span>Visit Official Redbubble Storefront (@badsty1e) &rarr;</span>
+              </a>
+              <span class="shop-pill-meta">Worldwide Tracked Shipping · Secure Checkout · 100% Satisfaction Guarantee</span>
+            </div>
+          </div>
+
+          <!-- Shop Filter Tabs -->
+          <div class="shop-filter-bar">
+            <button class="shop-filter-btn active" data-filter="all">All Designs</button>
+            <button class="shop-filter-btn" data-filter="prints">Art Prints &amp; Posters</button>
+            <button class="shop-filter-btn" data-filter="stickers">Stickers &amp; Magnets</button>
+            <button class="shop-filter-btn" data-filter="apparel">Apparel &amp; Streetwear</button>
+          </div>
+
+          <!-- Product Grid -->
+          <div id="shop-products-grid" class="shop-products-grid"></div>
+
+          <!-- Shop Trust / Fulfillment Banner -->
+          <div class="shop-guarantee-banner">
+            <div class="guarantee-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              <div>
+                <h4>Archival Inks &amp; Paper</h4>
+                <p>Fade-resistant pigment printing on 240gsm heavyweight fine art paper and archival canvas.</p>
+              </div>
+            </div>
+            <div class="guarantee-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M2 12h20"></path>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <div>
+                <h4>Global Tracked Delivery</h4>
+                <p>Printed locally in regional hubs across the US, UK, EU, and Australia with live tracking.</p>
+              </div>
+            </div>
+            <div class="guarantee-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                <line x1="1" y1="10" x2="23" y2="10"></line>
+              </svg>
+              <div>
+                <h4>Seamless Redbubble Checkout</h4>
+                <p>Finish your purchase directly on Redbubble using Apple Pay, PayPal, or any major credit card.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- VIEW: BOUDOIR PHOTOGRAPHY BLOG & AUTOMATED WEB FEED -->
+      <section id="view-blog" class="page-view" aria-label="Boudoir Photography Blog and Industry Articles">
+        <div class="blog-container">
+          
+          <!-- Blog Hero -->
+          <div class="section-hero">
+            <span class="hero-tag">Weekly Boudoir Intelligence · Automated Web Feed</span>
+            <h1 class="section-hero-title">The Boudoir Blog</h1>
+            <p class="section-hero-sub">
+              Curated intelligence, posing tutorials, cinematic lighting breakdowns, and psychological guides involving modern boudoir portraiture—scraped and refreshed automatically weekly.
+            </p>
+            <div class="blog-meta-feed-bar">
+              <div class="feed-status-indicator">
+                <span class="live-dot"></span>
+                <span id="blog-feed-status">Live Web Feed · Updated Weekly</span>
+              </div>
+              <button id="blog-sync-btn" class="blog-sync-btn" title="Scrape and sync latest boudoir articles">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
+                </svg>
+                <span>Check for New Articles</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Category Filter Bar -->
+          <div class="blog-filter-bar">
+            <button class="blog-filter-btn active" data-category="all">All Topics</button>
+            <button class="blog-filter-btn" data-category="Posing &amp; Direction">Posing &amp; Direction</button>
+            <button class="blog-filter-btn" data-category="Lighting &amp; Gear">Lighting &amp; Gear</button>
+            <button class="blog-filter-btn" data-category="Client Confidence">Client Confidence</button>
+            <button class="blog-filter-btn" data-category="Editorial &amp; Styling">Editorial &amp; Styling</button>
+            <button class="blog-filter-btn" data-category="Industry Insights">Industry Insights</button>
+          </div>
+
+          <!-- Articles Grid -->
+          <div id="blog-articles-grid" class="blog-articles-grid"></div>
+
+          <!-- In-House Editorial Essays -->
+          <div class="blog-inhouse-section">
+            <div class="section-hero center-align">
+              <span class="hero-tag">Badstyle Originals</span>
+              <h2 class="section-hero-title">Editorial Essays &amp; Manifestos</h2>
+              <p class="section-hero-sub">Exclusive writings from Adam on the philosophy of the Anti-Boudoir aesthetic.</p>
+            </div>
+            <div id="journal-cards-grid" class="journal-cards-grid"></div>
+          </div>
+
+          <!-- Client Love Notes (Yelp Verified) -->
+          <div class="love-notes-section">
+            <div class="section-hero center-align">
+              <span class="hero-tag">Verified 5.0 ★ Rating · Yelp Business Profile</span>
+              <h2 class="section-hero-title">Client Love Notes</h2>
+              <p class="section-hero-sub">
+                Authentic reviews extracted directly from our verified <a href="https://www.yelp.com/biz/badstyle-photography-orange" target="_blank" rel="noopener noreferrer" class="yelp-text-link">Yelp Page</a>.
+              </p>
+            </div>
+
+            <div id="love-notes-grid" class="love-notes-grid"></div>
+
+            <div class="love-notes-yelp-cta">
+              <a href="https://www.yelp.com/biz/badstyle-photography-orange" target="_blank" rel="noopener noreferrer" class="yelp-direct-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.16 11.83l2.76 5.86c.21.45.02 1-.41 1.22l-1.99.98c-.44.22-1 .04-1.22-.4L8.74 13.9a.78.78 0 0 1 .42-1.07l2.12-.91c.36-.15.75-.08.88-.09zm-2.07-2.01L4.2 8.7c-.49-.1-.82-.57-.74-1.07l.38-2.2c.08-.5.56-.84 1.05-.75l6.39 1.15c.44.08.73.5.64.95l-.43 2.27c-.07.38-.34.69-.72.79zM12 2c.55 0 1 .45 1 1v6.5c0 .41-.25.78-.64.93l-2.12.83c-.39.15-.84.03-1.11-.29L5.4 6.2c-.35-.42-.3-1.05.12-1.4l1.66-1.39C7.6 3.06 8.24 3.12 8.59 3.54L11 6.42V3c0-.55.45-1 1-1zm2.32 8.59l6.19-2.07c.48-.16 1 .1 1.16.58l.73 2.12c.16.48-.1 1-.58 1.16l-6.19 2.07c-.43.14-.9-.08-1.07-.5l-.83-2.16c-.15-.36-.08-.77.21-1.01l.38-.19zm-.62 3.25l4.87 4.31c.37.33.42.9.11 1.29l-1.41 1.76c-.32.39-.89.46-1.28.14l-4.87-4.31a.78.78 0 0 1-.21-1.13l1.32-1.89c.22-.32.61-.47.98-.42.23.03.4.15.49.25z"/>
+                </svg>
+                <span>Read Verified Reviews on Yelp &rarr;</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- VIEW 4: ABOUT -->
+      <section id="view-about" class="page-view" aria-label="About Badstyle">
+        <div class="about-container">
+          
+          <!-- Hero Section -->
+          <div class="about-hero">
+            <div class="about-hero-text">
+              <span class="hero-tag">Lead Photographer &amp; Creative Force · Orange County, CA</span>
+              <h1 class="about-hero-title">Welcome to Badstyle Photography</h1>
+              <div class="about-hero-bio">
+                <p class="about-bio-lead">
+                  I’m Adam, the lead photographer and creative force behind Badstyle Photography. Based right here in Orange County, I specialize in crafting bold, cinematic, and deeply personal boudoir portraits that celebrate exactly who you are.
+                </p>
+                <p class="about-bio-text">
+                  My approach to photography is rooted in a dynamic visual style—drawing inspiration from vivid graphic art, edgy street aesthetics, and striking editorial portraiture. I don’t just want to take a standard photo; I want to create a standout piece of art that makes you feel powerful, confident, and unapologetically yourself.
+                </p>
+              </div>
+            </div>
+            <div class="about-hero-image-wrap">
+              <img id="about-hero-img" src="images/badstyle_about.jpg" alt="Adam — Badstyle Photography" />
+            </div>
+          </div>
+
+          <!-- Animated Counters / Facts Grid -->
+          <div id="about-facts-grid" class="facts-grid"></div>
+
+          <!-- The Experience Statement -->
+          <div class="statement-section">
+            <div class="statement-heading-col">
+              <span class="section-label">Session Atmosphere</span>
+              <h2 class="statement-headline">The Experience</h2>
+            </div>
+            <div class="statement-paragraphs">
+              <p>
+                Stepping in front of a camera for a boudoir session can feel intimidating, which is why creating a laid-back, zero-pressure environment is my absolute top priority. My goal is to make the entire process feel less like a nerve-wracking photoshoot and more like a collaborative creative project.
+              </p>
+              <p>
+                From getting the lighting dialed in perfectly to finding those natural, unposed moments with a classic 85mm portrait lens, I guide you through every single step. You don't need to know how to pose or have any modeling experience—directing the flow of the shoot to capture your best angles is what I’m here for.
+              </p>
+            </div>
+          </div>
+
+          <!-- The Philosophy Statement -->
+          <div class="statement-section">
+            <div class="statement-heading-col">
+              <span class="section-label">Artistic Vision</span>
+              <h2 class="statement-headline">The Philosophy</h2>
+            </div>
+            <div class="statement-paragraphs">
+              <p>
+                Boudoir isn’t just about the final gallery of images; it’s about the transformative experience of owning your space and seeing yourself through a new, artistic lens. Whether you’re marking a personal milestone, creating a bold gift for a partner, or simply celebrating your own unique edge, I’m here to capture it with raw authenticity and serious style.
+              </p>
+            </div>
+          </div>
+
+          <!-- Disciplines & Core Services -->
+          <div class="disciplines-section">
+            <span class="section-label">Disciplines &amp; Expertise</span>
+            <div id="about-disciplines-grid" class="disciplines-grid"></div>
+          </div>
+
+          <!-- Continuous Marquee Ticker -->
+          <div class="ticker-banner" aria-hidden="true">
+            <div id="about-ticker-track" class="ticker-track"></div>
+          </div>
+
+          <!-- Awards & Industry Recognition Table -->
+          <div class="awards-section">
+            <div class="awards-intro">
+              <h2 class="awards-intro-title">Project Recognition</h2>
+              <p class="awards-intro-p">
+                A selection of photographic work shaped by curiosity, intention, and a visual perspective. Each project reflects a commitment to storytelling, refined craft, and imagery that leaves a lasting impression.
+              </p>
+            </div>
+            <div id="about-awards-table" class="awards-table"></div>
+          </div>
+
+          <!-- Client Testimonial -->
+          <div class="testimonial-card">
+            <div class="quote-mark">“</div>
+            <blockquote id="about-testimonial-quote" class="testimonial-quote"></blockquote>
+            <div id="about-testimonial-author" class="testimonial-author"></div>
+          </div>
+
+          <!-- About Call to Action -->
+          <div class="about-cta-card">
+            <div class="about-cta-content">
+              <span class="section-label">Start Your Journey</span>
+              <h2 class="about-cta-title">Let’s create something unforgettable.</h2>
+              <p class="about-cta-subtitle">Reach out to book your consultation and start planning your custom shoot today.</p>
+              <a href="#contact" class="submit-btn about-cta-btn">Book Your Consultation</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- VIEW 5: CONTACT -->
+      <section id="view-contact" class="page-view" aria-label="Contact Badstyle">
+        <div class="contact-container">
+          
+          <div class="contact-hero">
+            <h1 class="contact-hero-title">Get in Touch</h1>
+            <p class="contact-hero-sub">
+              Whether you have a clear vision or just an idea, I’m here to help shape it into something meaningful.
+            </p>
+          </div>
+
+          <div class="contact-main-grid">
+            
+            <!-- Left Column: Details & Inquiry Channels -->
+            <div class="contact-details-col">
+              <div class="direct-channels">
+                <div class="channel-card">
+                  <svg class="channel-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <div class="channel-info">
+                    <h4>Direct Inquiries</h4>
+                    <a href="mailto:contact@badstylephotography.com">contact@badstylephotography.com</a>
+                  </div>
+                </div>
+
+                <div class="channel-card">
+                  <svg class="channel-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                  <div class="channel-info">
+                    <h4>Instagram</h4>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">@badstylephotography</a>
+                  </div>
+                </div>
+
+                <div class="channel-card">
+                  <svg class="channel-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <div class="channel-info">
+                    <h4>Studio Location</h4>
+                    <p>Orange County, California · Private Studio &amp; On-Location</p>
+                  </div>
+                </div>
+
+                <div class="channel-card confidentiality-card">
+                  <svg class="channel-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                  <div class="channel-info">
+                    <h4>100% Confidentiality Guarantee</h4>
+                    <p>All sessions and images are strictly confidential. Zero images are ever shared or published without explicit written release.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Interactive Form -->
+            <div class="contact-form-wrap">
+              <h3 class="form-title">Send a Message</h3>
+              <p class="form-desc">Have any questions? Reach out to me from my contact form and I will personally get back to you shortly.</p>
+
+              <form id="contact-form" class="contact-form">
+                <div class="form-row-2col">
+                  <div class="form-group">
+                    <label for="contact-name" class="form-label">Full Name *</label>
+                    <input type="text" id="contact-name" class="form-input" placeholder="e.g. Elena Rostova" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-email" class="form-label">Email Address *</label>
+                    <input type="email" id="contact-email" class="form-input" placeholder="elena@example.com" required />
+                  </div>
+                </div>
+
+                <div class="form-row-2col">
+                  <div class="form-group">
+                    <label for="contact-phone" class="form-label">Phone / WhatsApp</label>
+                    <input type="tel" id="contact-phone" class="form-input" placeholder="+1 (555) 019-2834" />
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-date" class="form-label">Preferred Date / Month</label>
+                    <input type="date" id="contact-date" class="form-input" />
+                  </div>
+                </div>
+
+                <div class="form-row-2col">
+                  <div class="form-group">
+                    <label for="contact-collection" class="form-label">Desired Collection Tier *</label>
+                    <select id="contact-collection" class="form-select" required>
+                      <option value="">Select a Collection Tier...</option>
+                      <option value="The Maverick ($1,200)">The Maverick — $1,200 (Essential Editorial)</option>
+                      <option value="The Badstyle Signature ($2,400)">The Badstyle Signature — $2,400 (Most Coveted)</option>
+                      <option value="The Haute Couture ($3,900)">The Haute Couture — $3,900 (VIP Art Commission)</option>
+                      <option value="Undecided">Undecided / Discuss During Consultation</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-aesthetic" class="form-label">Desired Aesthetic &amp; Vibe *</label>
+                    <select id="contact-aesthetic" class="form-select" required>
+                      <option value="">Select an Aesthetic...</option>
+                      <option value="Cinematic Noir & Shadowplay">Cinematic Noir &amp; Hard Shadowplay</option>
+                      <option value="High-Fashion Tailored & Leather">High-Fashion Tailored Suiting &amp; Moto Leather</option>
+                      <option value="Raw & Minimalist Editorial">Raw &amp; Minimalist Dewy Editorial</option>
+                      <option value="Moody Water & Bathtub">Moody Water, Rain Stage &amp; Bathtub</option>
+                      <option value="Color Block & Saturated Chroma">Bold Color Block &amp; Saturated Chroma</option>
+                      <option value="Custom Collaborative Vision">Custom Concept / Collaborative Vision</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">Your Vision &amp; Notes *</label>
+                  <textarea id="contact-message" class="form-textarea" placeholder="Tell us about the milestone, aesthetic ideas, comfort zones, or how you wish to feel in front of the lens..." required></textarea>
+                </div>
+
+                <!-- Mandatory Privacy & Confidentiality Checkbox -->
+                <div class="form-checkbox-group">
+                  <label class="checkbox-label" for="contact-privacy">
+                    <input type="checkbox" id="contact-privacy" class="form-checkbox" required />
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">
+                      <strong>100% Privacy &amp; Discretion Guarantee:</strong> I understand that my session and images are completely confidential and will <em>never</em> be shared or published publicly without my explicit, written release.
+                    </span>
+                  </label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                  Submit Booking Inquiry
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+
+                <div id="form-feedback" class="form-feedback" role="alert"></div>
+              </form>
+            </div>
+
+          </div>
+
+          <!-- FAQ Accordion -->
+          <div class="faq-section">
+            <div class="faq-header">
+              <h2 class="faq-title">Need more details?</h2>
+              <p class="faq-subtitle">Here are a few answers to things clients usually ask before starting a project together with me.</p>
+            </div>
+            <div id="contact-faq-list" class="accordion-list"></div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Bottom Status Bar (for gallery views) -->
+    <footer class="footer-bar" role="contentinfo">
+      <div class="footer-left">
+        <span>&copy; Badstyle Photography.</span>
+      </div>
+
+      <div class="footer-center">
+        <span>Scroll / Swipe</span>
+        <span class="hint-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </span>
+      </div>
+
+      <div class="footer-right">
+        <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="https://twitter.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+          </svg>
+        </a>
+        <a href="https://behance.net" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Behance">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M3 8h6a3 3 0 0 1 0 6h-6z"></path>
+            <path d="M3 14h7a3 3 0 0 1 0 6h-7z"></path>
+            <path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1.5"></path>
+            <line x1="15" y1="9" x2="20" y2="9"></line>
+          </svg>
+        </a>
+        <a href="mailto:contact@badstylephotography.com" class="social-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Fullscreen Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image Lightbox">
+      <div class="lightbox-header">
+        <div class="lightbox-info">
+          <h2 id="lightbox-title" class="lightbox-title"></h2>
+          <span id="lightbox-category" class="lightbox-category" style="font-size:0.8rem; color:var(--text-secondary);"></span>
+          <span id="lightbox-counter" class="lightbox-counter"></span>
+        </div>
+        <button id="lightbox-close-btn" class="lightbox-close-btn" aria-label="Close Lightbox (Esc)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="lightbox-stage">
+        <button id="lightbox-prev-btn" class="lightbox-nav-btn prev" aria-label="Previous image">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="lightbox-image-wrap">
+          <img id="lightbox-image" src="" alt="Fullscreen Photography" />
+        </div>
+
+        <button id="lightbox-next-btn" class="lightbox-nav-btn next" aria-label="Next image">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <div class="lightbox-footer">
+        <span>Badstyle Photography Portfolio</span>
+        <span>Press <kbd>ESC</kbd> to close &middot; <kbd>&larr;</kbd> <kbd>&rarr;</kbd> to navigate</span>
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- Editorial Journal Article Reader Modal -->
+    <div id="journal-modal" class="journal-modal" role="dialog" aria-modal="true" aria-label="Article Reader">
+      <div class="journal-modal-container">
+        <header class="journal-modal-header">
+          <div class="journal-modal-meta">
+            <span id="journal-modal-date" class="journal-date"></span>
+            <span class="bullet">·</span>
+            <span id="journal-modal-readtime" class="journal-readtime"></span>
+          </div>
+          <button id="journal-modal-close-btn" class="lightbox-close-btn" aria-label="Close Story (Esc)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </header>
+
+        <article class="journal-modal-body">
+          <h1 id="journal-modal-title" class="journal-modal-title"></h1>
+          <p id="journal-modal-subtitle" class="journal-modal-subtitle"></p>
+          <div class="journal-modal-image-wrap">
+            <img id="journal-modal-cover" src="" alt="Journal Story Cover" />
+          </div>
+          <div id="journal-modal-content" class="journal-modal-content"></div>
+        </article>
+
+        <footer class="journal-modal-footer">
+          <div class="journal-footer-content">
+            <h4>Ready to create your own visual narrative?</h4>
+            <p>Every story begins with a personal styling consultation.</p>
+            <a href="#contact" id="journal-cta-book-btn" class="submit-btn">Book Your Session</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
