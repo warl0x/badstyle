@@ -70,7 +70,6 @@
   // ==========================================================================
   function renderGalleries() {
     renderSingleGallery('portrait', SITE_DATA.galleries.portrait);
-    renderSingleGallery('advertorial', SITE_DATA.galleries.advertorial);
   }
 
   function renderSingleGallery(galleryKey, items) {
@@ -611,40 +610,34 @@
     function filterMatches(item, filter) {
       if (filter === 'all') return true;
       const cat = (item.category || '').toLowerCase();
-      if (filter === 'prints') return cat.includes('print') || cat.includes('poster') || cat.includes('wall') || cat.includes('canvas');
-      if (filter === 'stickers') return cat.includes('sticker') || cat.includes('magnet');
-      if (filter === 'apparel') return cat.includes('apparel') || cat.includes('tee') || cat.includes('street');
+      if (filter === 'prints') return cat.includes('poster') || cat.includes('print');
+      if (filter === 'magnets') return cat.includes('magnet');
+      if (filter === 'stickers') return cat.includes('sticker');
+      if (filter === 'apparel') return cat.includes('apparel') || cat.includes('home');
       return true;
     }
 
     function displayProducts(activeFilter) {
       const filtered = shopData.filter(item => filterMatches(item, activeFilter));
-      
+
       grid.innerHTML = filtered.map(item => `
         <article class="shop-product-card" id="${item.id}">
-          <div class="shop-card-visual">
-            <div class="shop-card-badge-row">
-              <span class="shop-badge">${item.badge}</span>
-              <span class="shop-cat-tag">${item.category}</span>
-            </div>
-            <div class="shop-visual-art">
-              <span class="shop-art-brand">BADSTYLE · RELEASES</span>
-              <h4 class="shop-art-title">${item.title}</h4>
-              <span class="shop-art-edition">Archival Fine Art &amp; Street Merch</span>
-            </div>
-          </div>
+          <a href="${item.redbubbleUrl}" target="_blank" rel="noopener noreferrer" class="shop-mockup-wrap" aria-label="View ${item.title} on Redbubble">
+            <img src="${item.image}" alt="${item.title} — ${item.badge}" loading="lazy" />
+            <span class="shop-mockup-badge">${item.badge}</span>
+          </a>
           <div class="shop-card-body">
             <div class="shop-card-header">
               <span class="shop-product-price">${item.price}</span>
-              <span class="shop-fulfillment">Redbubble Fulfillment</span>
+              <span class="shop-fulfillment">${item.category}</span>
             </div>
-            <h3 class="shop-product-title">${item.title}</h3>
-            <p class="shop-product-subtitle">${item.subtitle}</p>
-            <p class="shop-product-desc">${item.description}</p>
+            <h3 class="shop-product-title">
+              <a href="${item.redbubbleUrl}" target="_blank" rel="noopener noreferrer">${item.title}</a>
+            </h3>
             <div class="shop-card-footer">
               <a href="${item.redbubbleUrl}" target="_blank" rel="noopener noreferrer" class="shop-buy-btn">
-                <span>Finish Purchase on Redbubble</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <span>Buy on Redbubble</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
                   <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                   <polyline points="15 3 21 3 21 9"></polyline>
                   <line x1="10" y1="14" x2="21" y2="3"></line>
@@ -697,46 +690,70 @@
         return;
       }
 
-      articlesGrid.innerHTML = filtered.map(article => `
+      function extractDomain(url) {
+        try {
+          return new URL(url).hostname.replace(/^www\./, '');
+        } catch {
+          return '';
+        }
+      }
+
+      articlesGrid.innerHTML = filtered.map((article, idx) => {
+        const domain = extractDomain(article.url);
+        const rank = String(idx + 1).padStart(2, '0');
+        return `
         <article class="blog-article-card" id="${article.id}">
-          <div class="blog-card-meta-top">
-            <div class="blog-source-pill">
-              <span class="source-icon">${article.sourceIcon || 'B'}</span>
-              <span class="source-name">${article.source}</span>
+          <div class="blog-row-rank">${rank}</div>
+          <div class="blog-row-main">
+            <div class="blog-row-topline">
+              <a href="${article.url}" target="_blank" rel="noopener noreferrer" class="blog-article-title">${article.title}</a>
+              <span class="blog-category-tag">${article.category}</span>
+              ${domain ? `<span class="blog-domain">(${domain})</span>` : ''}
             </div>
-            <span class="blog-category-tag">${article.category}</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-time-row">
+            <div class="blog-row-subline">
+              <button type="button" class="blog-expando-btn" aria-expanded="false" title="Preview summary &amp; takeaways">Aa+</button>
+              <span class="blog-source-pill">
+                <span class="source-name">${article.source}</span>
+              </span>
+              <span>·</span>
               <span>${article.date}</span>
               <span>·</span>
               <span>${article.readTime}</span>
+              <span>·</span>
+              <a href="${article.url}" target="_blank" rel="noopener noreferrer" class="blog-external-link">open &nearr;</a>
             </div>
-            <h3 class="blog-article-title">
-              <a href="${article.url}" target="_blank" rel="noopener noreferrer">${article.title}</a>
-            </h3>
-            <p class="blog-article-excerpt">${article.excerpt}</p>
-            ${article.keyPoints && article.keyPoints.length ? `
-              <div class="blog-keypoints">
-                <span class="keypoints-title">Core Key Takeaways:</span>
-                <ul>
+            <div class="blog-expando-body" hidden>
+              <p class="blog-article-excerpt">${article.excerpt}</p>
+              ${article.keyPoints && article.keyPoints.length ? `
+                <ul class="blog-keypoints-list">
                   ${article.keyPoints.map(kp => `<li>${kp}</li>`).join('')}
                 </ul>
-              </div>
-            ` : ''}
-          </div>
-          <div class="blog-card-footer">
-            <a href="${article.url}" target="_blank" rel="noopener noreferrer" class="blog-external-link">
-              <span>Read Full Article on ${article.source}</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-            </a>
+              ` : ''}
+            </div>
           </div>
         </article>
-      `).join('');
+      `;
+      }).join('');
+
+      articlesGrid.querySelectorAll('.blog-expando-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const row = btn.closest('.blog-article-card');
+          const body = row && row.querySelector('.blog-expando-body');
+          if (!body) return;
+          const isHidden = body.hasAttribute('hidden');
+          if (isHidden) {
+            body.removeAttribute('hidden');
+            btn.setAttribute('aria-expanded', 'true');
+            btn.textContent = '×';
+            btn.classList.add('open');
+          } else {
+            body.setAttribute('hidden', '');
+            btn.setAttribute('aria-expanded', 'false');
+            btn.textContent = 'Aa+';
+            btn.classList.remove('open');
+          }
+        });
+      });
     }
 
     // Attempt to load from JSON file first, falling back to SITE_DATA.blogFeed
@@ -960,7 +977,7 @@
     const cleanRoute = (routeId || '').replace('#', '').trim() || 'portrait';
 
     // Redirect legacy routes seamlessly
-    if (cleanRoute === 'still-life') {
+    if (cleanRoute === 'still-life' || cleanRoute === 'advertorial') {
       window.location.hash = '#portrait';
       return;
     }
@@ -969,7 +986,7 @@
       return;
     }
 
-    const validRoutes = ['portrait', 'advertorial', 'experience', 'shop', 'blog', 'about', 'contact'];
+    const validRoutes = ['portrait', 'experience', 'shop', 'blog', 'about', 'contact'];
     const activeRoute = validRoutes.includes(cleanRoute) ? cleanRoute : 'portrait';
 
     state.currentRoute = activeRoute;
@@ -987,7 +1004,7 @@
     });
 
     // Toggle footer hint & layout button visibility (only for photo galleries)
-    const isGallery = ['portrait', 'advertorial'].includes(activeRoute);
+    const isGallery = ['portrait'].includes(activeRoute);
     if (layoutToggleBtn) {
       layoutToggleBtn.style.display = isGallery ? 'inline-flex' : 'none';
     }

@@ -4,17 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
   <title>Badstyle — Creative Photography &amp; Visual Direction</title>
-  <meta name="description" content="A bold, elegant editorial portfolio template for photographers and visual creatives. Showcasing People &amp; Portrait, Advertorial campaigns, and Still Life imagery." />
+  <meta name="description" content="Badstyle Photography — Bold, cinematic editorial boudoir & portrait photography in Orange County." />
   
   <!-- Open Graph / Meta -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Badstyle — Creative Photography &amp; Visual Direction" />
   <meta property="og:description" content="A bold, elegant editorial portfolio template for photographers and visual creatives." />
-  <meta property="og:image" content="images/portraits/badstyle-8374.jpg" />
+  <meta property="og:image" content="images/portraits/IMG_0130.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Badstyle — Creative Photography &amp; Visual Direction" />
   <meta name="twitter:description" content="A bold, elegant editorial portfolio template for photographers and visual creatives." />
-  <meta name="twitter:image" content="images/portraits/badstyle-8374.jpg" />
+  <meta name="twitter:image" content="images/portraits/IMG_0130.jpg" />
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22serif%22 font-weight=%22bold%22>B</text></svg>" />
@@ -34,7 +34,6 @@
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
           <li class="nav-item"><a href="#portrait" class="nav-link active">People &amp; Portrait</a></li>
-          <li class="nav-item"><a href="#advertorial" class="nav-link">Advertorial</a></li>
           <li class="nav-item"><a href="#experience" class="nav-link">Experience &amp; Pricing</a></li>
           <li class="nav-item"><a href="#shop" class="nav-link">Shop</a></li>
           <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
@@ -74,7 +73,6 @@
     <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
       <ul class="mobile-nav-links">
         <li><a href="#portrait" class="mobile-nav-link">People &amp; Portrait</a></li>
-        <li><a href="#advertorial" class="mobile-nav-link">Advertorial</a></li>
         <li><a href="#experience" class="mobile-nav-link">Experience &amp; Pricing</a></li>
         <li><a href="#shop" class="mobile-nav-link">Shop</a></li>
         <li><a href="#blog" class="mobile-nav-link">Blog</a></li>
@@ -99,14 +97,6 @@
 
       <!-- VIEW 1: PEOPLE & PORTRAIT -->
       <section id="view-portrait" class="page-view active" aria-label="People and Portrait Gallery">
-        <div class="gallery-viewport">
-          <div class="horizontal-track" role="region" aria-label="Horizontal image flow"></div>
-          <div class="grid-container" role="region" aria-label="Editorial grid view"></div>
-        </div>
-      </section>
-
-      <!-- VIEW 2: ADVERTORIAL -->
-      <section id="view-advertorial" class="page-view" aria-label="Advertorial Work Gallery">
         <div class="gallery-viewport">
           <div class="horizontal-track" role="region" aria-label="Horizontal image flow"></div>
           <div class="grid-container" role="region" aria-label="Editorial grid view"></div>
@@ -197,10 +187,10 @@
 
           <!-- Shop Filter Tabs -->
           <div class="shop-filter-bar">
-            <button class="shop-filter-btn active" data-filter="all">All Designs</button>
-            <button class="shop-filter-btn" data-filter="prints">Art Prints &amp; Posters</button>
-            <button class="shop-filter-btn" data-filter="stickers">Stickers &amp; Magnets</button>
-            <button class="shop-filter-btn" data-filter="apparel">Apparel &amp; Streetwear</button>
+            <button class="shop-filter-btn active" data-filter="all">All Designs (20)</button>
+            <button class="shop-filter-btn" data-filter="prints">Posters</button>
+            <button class="shop-filter-btn" data-filter="magnets">Magnets</button>
+            <button class="shop-filter-btn" data-filter="stickers">Stickers</button>
           </div>
 
           <!-- Product Grid -->
@@ -246,31 +236,30 @@
       <!-- VIEW: BOUDOIR PHOTOGRAPHY BLOG & AUTOMATED WEB FEED -->
       <section id="view-blog" class="page-view" aria-label="Boudoir Photography Blog and Industry Articles">
         <div class="blog-container">
-          
-          <!-- Blog Hero -->
-          <div class="section-hero">
-            <span class="hero-tag">Weekly Boudoir Intelligence · Automated Web Feed</span>
-            <h1 class="section-hero-title">The Boudoir Blog</h1>
-            <p class="section-hero-sub">
-              Curated intelligence, posing tutorials, cinematic lighting breakdowns, and psychological guides involving modern boudoir portraiture—scraped and refreshed automatically weekly.
-            </p>
+
+          <!-- Compact Reddit-style Top Header -->
+          <div class="blog-compact-header">
+            <div class="blog-header-left">
+              <h1 class="blog-compact-title">The Boudoir Feed</h1>
+              <span class="blog-compact-sub">Weekly scraped boudoir articles, posing, lighting &amp; styling</span>
+            </div>
             <div class="blog-meta-feed-bar">
               <div class="feed-status-indicator">
                 <span class="live-dot"></span>
-                <span id="blog-feed-status">Live Web Feed · Updated Weekly</span>
+                <span id="blog-feed-status">Live · Updated Weekly</span>
               </div>
-              <button id="blog-sync-btn" class="blog-sync-btn" title="Scrape and sync latest boudoir articles">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <button id="blog-sync-btn" class="blog-sync-btn" title="Check for latest boudoir articles">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
                   <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
                 </svg>
-                <span>Check for New Articles</span>
+                <span>Sync</span>
               </button>
             </div>
           </div>
 
-          <!-- Category Filter Bar -->
+          <!-- Compact Filter Strip -->
           <div class="blog-filter-bar">
-            <button class="blog-filter-btn active" data-category="all">All Topics</button>
+            <button class="blog-filter-btn active" data-category="all">All</button>
             <button class="blog-filter-btn" data-category="Posing &amp; Direction">Posing &amp; Direction</button>
             <button class="blog-filter-btn" data-category="Lighting &amp; Gear">Lighting &amp; Gear</button>
             <button class="blog-filter-btn" data-category="Client Confidence">Client Confidence</button>
@@ -278,39 +267,25 @@
             <button class="blog-filter-btn" data-category="Industry Insights">Industry Insights</button>
           </div>
 
-          <!-- Articles Grid -->
+          <!-- Articles Feed List -->
           <div id="blog-articles-grid" class="blog-articles-grid"></div>
 
-          <!-- In-House Editorial Essays -->
+          <!-- In-House Editorial Essays (Pinned Strip) -->
           <div class="blog-inhouse-section">
-            <div class="section-hero center-align">
-              <span class="hero-tag">Badstyle Originals</span>
-              <h2 class="section-hero-title">Editorial Essays &amp; Manifestos</h2>
-              <p class="section-hero-sub">Exclusive writings from Adam on the philosophy of the Anti-Boudoir aesthetic.</p>
+            <div class="blog-subbar">
+              <h2 class="blog-subbar-title">Pinned · Badstyle Originals</h2>
+              <span class="blog-subbar-meta">Essays by Adam · Click to read</span>
             </div>
             <div id="journal-cards-grid" class="journal-cards-grid"></div>
           </div>
 
-          <!-- Client Love Notes (Yelp Verified) -->
+          <!-- Client Love Notes (Compact Reviews Feed) -->
           <div class="love-notes-section">
-            <div class="section-hero center-align">
-              <span class="hero-tag">Verified 5.0 ★ Rating · Yelp Business Profile</span>
-              <h2 class="section-hero-title">Client Love Notes</h2>
-              <p class="section-hero-sub">
-                Authentic reviews extracted directly from our verified <a href="https://www.yelp.com/biz/badstyle-photography-orange" target="_blank" rel="noopener noreferrer" class="yelp-text-link">Yelp Page</a>.
-              </p>
+            <div class="blog-subbar">
+              <h2 class="blog-subbar-title">Client Love Notes · 5.0 ★</h2>
+              <a href="https://www.yelp.com/biz/badstyle-photography-orange" target="_blank" rel="noopener noreferrer" class="yelp-text-link">Verified Yelp Reviews &rarr;</a>
             </div>
-
             <div id="love-notes-grid" class="love-notes-grid"></div>
-
-            <div class="love-notes-yelp-cta">
-              <a href="https://www.yelp.com/biz/badstyle-photography-orange" target="_blank" rel="noopener noreferrer" class="yelp-direct-badge">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12.16 11.83l2.76 5.86c.21.45.02 1-.41 1.22l-1.99.98c-.44.22-1 .04-1.22-.4L8.74 13.9a.78.78 0 0 1 .42-1.07l2.12-.91c.36-.15.75-.08.88-.09zm-2.07-2.01L4.2 8.7c-.49-.1-.82-.57-.74-1.07l.38-2.2c.08-.5.56-.84 1.05-.75l6.39 1.15c.44.08.73.5.64.95l-.43 2.27c-.07.38-.34.69-.72.79zM12 2c.55 0 1 .45 1 1v6.5c0 .41-.25.78-.64.93l-2.12.83c-.39.15-.84.03-1.11-.29L5.4 6.2c-.35-.42-.3-1.05.12-1.4l1.66-1.39C7.6 3.06 8.24 3.12 8.59 3.54L11 6.42V3c0-.55.45-1 1-1zm2.32 8.59l6.19-2.07c.48-.16 1 .1 1.16.58l.73 2.12c.16.48-.1 1-.58 1.16l-6.19 2.07c-.43.14-.9-.08-1.07-.5l-.83-2.16c-.15-.36-.08-.77.21-1.01l.38-.19zm-.62 3.25l4.87 4.31c.37.33.42.9.11 1.29l-1.41 1.76c-.32.39-.89.46-1.28.14l-4.87-4.31a.78.78 0 0 1-.21-1.13l1.32-1.89c.22-.32.61-.47.98-.42.23.03.4.15.49.25z"/>
-                </svg>
-                <span>Read Verified Reviews on Yelp &rarr;</span>
-              </a>
-            </div>
           </div>
 
         </div>
@@ -436,7 +411,7 @@
                   </svg>
                   <div class="channel-info">
                     <h4>Direct Inquiries</h4>
-                    <a href="mailto:contact@badstylephotography.com">contact@badstylephotography.com</a>
+                    <a href="mailto:itsbadstyle@gmail.com">itsbadstyle@gmail.com</a>
                   </div>
                 </div>
 
@@ -448,7 +423,7 @@
                   </svg>
                   <div class="channel-info">
                     <h4>Instagram</h4>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">@badstylephotography</a>
+                    <a href="https://instagram.com/badstylephoto" target="_blank" rel="noopener noreferrer">@badstylephoto</a>
                   </div>
                 </div>
 
@@ -588,7 +563,7 @@
       </div>
 
       <div class="footer-right">
-        <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <a href="https://instagram.com/badstylephoto" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -609,7 +584,7 @@
             <line x1="15" y1="9" x2="20" y2="9"></line>
           </svg>
         </a>
-        <a href="mailto:contact@badstylephotography.com" class="social-link" aria-label="Email">
+        <a href="mailto:itsbadstyle@gmail.com" class="social-link" aria-label="Email">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
             <polyline points="22,6 12,13 2,6"></polyline>

@@ -6,19 +6,18 @@ const SITE_DATA = {
     name: "BADSTYLE",
     fullName: "Badstyle Photography",
     tagline: "Award Winning Photographer & Visual Direction",
-    description: "A bold and elegant editorial portfolio showcasing people & portraits, advertorial campaigns, and still life imagery.",
-    email: "contact@badstylephotography.com",
-    instagram: "@badstylephotography",
-    instagramUrl: "https://instagram.com",
+    description: "Bold, cinematic, and deeply personal editorial boudoir & portrait photography in Orange County.",
+    email: "itsbadstyle@gmail.com",
+    instagram: "@badstylephoto",
+    instagramUrl: "https://instagram.com/badstylephoto",
     twitterUrl: "https://twitter.com",
     behanceUrl: "https://behance.net",
-    location: "Los Angeles · New York · Paris",
+    location: "Orange County, California",
     copyright: "© Badstyle Photography. All rights reserved."
   },
   
   navigation: [
     { id: "portrait", label: "People & Portrait", path: "#portrait" },
-    { id: "advertorial", label: "Advertorial", path: "#advertorial" },
     { id: "experience", label: "Experience & Pricing", path: "#experience" },
     { id: "shop", label: "Shop", path: "#shop" },
     { id: "blog", label: "Blog", path: "#blog" },
@@ -28,36 +27,6 @@ const SITE_DATA = {
 
   galleries: {
         portrait: [
-      {
-        id: "p_badstyle_1",
-        title: "Badstyle 8374",
-        category: "People & Portrait",
-        year: "2026",
-        src: "images/portraits/badstyle-8374.jpg",
-        width: 2048,
-        height: 1365,
-        aspectRatio: "1.5"
-      },
-      {
-        id: "p_badstyle_2",
-        title: "Badstyle 9183",
-        category: "People & Portrait",
-        year: "2026",
-        src: "images/portraits/badstyle-9183.jpg",
-        width: 1365,
-        height: 2048,
-        aspectRatio: "0.667"
-      },
-      {
-        id: "p_badstyle_3",
-        title: "Frame 2136",
-        category: "People & Portrait",
-        year: "2026",
-        src: "images/portraits/DSC02136.jpg",
-        width: 1152,
-        height: 2048,
-        aspectRatio: "0.562"
-      },
       {
         id: "p_badstyle_4",
         title: "Frame 2255",
@@ -74,16 +43,6 @@ const SITE_DATA = {
         category: "People & Portrait",
         year: "2026",
         src: "images/portraits/DSC02257.jpg",
-        width: 1152,
-        height: 2048,
-        aspectRatio: "0.562"
-      },
-      {
-        id: "p_badstyle_6",
-        title: "Frame 6347",
-        category: "People & Portrait",
-        year: "2026",
-        src: "images/portraits/DSC06347.jpg",
         width: 1152,
         height: 2048,
         aspectRatio: "0.562"
@@ -568,175 +527,192 @@ const SITE_DATA = {
         height: 2048,
         aspectRatio: "0.667"
       }
-    ],
-
-    advertorial: [
-      {
-        id: "a1",
-        title: "Autumn Colors Speak",
-        category: "Advertorial Work",
-        year: "2025",
-        src: "https://framerusercontent.com/images/M065NRP5CskMQ3XP3v2TAx3vgA.jpg?width=2250&height=1500",
-        width: 2250,
-        height: 1500,
-        aspectRatio: "1.5"
-      },
-      {
-        id: "a2",
-        title: "Red Against Blue",
-        category: "Advertorial Work",
-        year: "2025",
-        src: "https://framerusercontent.com/images/1o9Qat08AqmKE6veku7cnK713A.jpg?width=1240&height=1500",
-        width: 1240,
-        height: 1500,
-        aspectRatio: "0.826"
-      },
-      {
-        id: "a3",
-        title: "Vogue Autumn Palette",
-        category: "Advertorial Work",
-        year: "2024",
-        src: "https://framerusercontent.com/images/Vq0PtLeqeGbaMUvl7qxQJaXRiUs.jpg?width=1000&height=1500",
-        width: 1000,
-        height: 1500,
-        aspectRatio: "0.667"
-      },
-      {
-        id: "a4",
-        title: "Pink Dreams Blooming",
-        category: "Advertorial Work",
-        year: "2024",
-        src: "https://framerusercontent.com/images/WWKL3J4mi9AGKUkUZMokiIwVs.jpg?width=2250&height=1500",
-        width: 2250,
-        height: 1500,
-        aspectRatio: "1.5"
-      },
-      {
-        id: "a5",
-        title: "Structured Haute Couture",
-        category: "Advertorial Work",
-        year: "2024",
-        src: "https://framerusercontent.com/images/LfJjnIOQYziH3sNx4VjiRYKHso.jpg?width=1000&height=1500",
-        width: 1000,
-        height: 1500,
-        aspectRatio: "0.667"
-      },
-      {
-        id: "a6",
-        title: "Architectural Silhouette",
-        category: "Advertorial Work",
-        year: "2024",
-        src: "https://framerusercontent.com/images/y1Qqhj51KwYJ2ouiVPgBKjrtqA.jpg?width=2250&height=1500",
-        width: 2250,
-        height: 1500,
-        aspectRatio: "1.5"
-      },
-      {
-        id: "a7",
-        title: "Modern Elegance In Silk",
-        category: "Advertorial Work",
-        year: "2023",
-        src: "https://framerusercontent.com/images/C9imc5VfKA4faglurYNfJyccP4.jpg?width=1000&height=1500",
-        width: 1000,
-        height: 1500,
-        aspectRatio: "0.667"
-      },
-      {
-        id: "a8",
-        title: "Campaign Metamorphosis",
-        category: "Advertorial Work",
-        year: "2023",
-        src: "https://framerusercontent.com/images/LT72gcYw4OqAzD7rslJN684D0rk.jpg?width=1000&height=1500",
-        width: 1000,
-        height: 1500,
-        aspectRatio: "0.667"
-      }
     ]
   },
 
   // ==========================================================================
-  // BADSTYLE REDBUBBLE ART & MERCH SHOP
+  // BADSTYLE REDBUBBLE ART & MERCH SHOP (20 OFFICIAL LISTINGS)
   // ==========================================================================
   shop: [
     {
-      id: "shop-french-inhale",
-      title: "French Inhale",
-      subtitle: "Street Style Portraiture & Aesthetic Smoke Drip",
-      category: "Stickers & Apparel",
-      price: "From $18.50",
-      redbubbleUrl: "https://www.redbubble.com/people/badsty1e/shop",
-      badge: "Best Seller",
-      description: "Iconic cinematic street portrait featuring smoke atmospherics, raw attitude, and bold editorial lighting. Available on premium vinyl stickers, graphic tees, and archival canvas prints."
+      id: "shop-keep-it-clean",
+      title: "Keep it Clean",
+      category: "Posters",
+      badge: "Poster",
+      price: "$16.19",
+      image: "images/shop/keep-it-clean.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/poster/Keep-it-Clean-by-badsty1e/160914885/flk2"
     },
     {
-      id: "shop-no-signal",
-      title: "No Signal Transmission",
-      subtitle: "Digital Glitch & Analog TV Interference",
-      category: "Art Prints & Posters",
-      price: "From $24.00",
-      redbubbleUrl: "https://www.redbubble.com/people/badsty1e/shop",
-      badge: "Limited Edition",
-      description: "High-contrast editorial piece exploring static interruption, broadcast distortion, and retro cathode-ray aesthetics. Printed on museum-quality 240gsm matte fine art paper."
+      id: "shop-make-you-my-slave",
+      title: "Make You My Slave with Kajira Bound",
+      category: "Posters",
+      badge: "Poster",
+      price: "$16.19",
+      image: "images/shop/make-you-my-slave-kajira-bound.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/poster/make-you-my-slave-with-kajira-bound-by-badsty1e/157945300/flk2"
+    },
+    {
+      id: "shop-you-need-a-ride",
+      title: "You Need a Ride?",
+      category: "Magnets",
+      badge: "Magnet",
+      price: "$6.71",
+      image: "images/shop/you-need-a-ride.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/magnet/You-need-a-ride-by-badsty1e/153128703/9gzh"
+    },
+    {
+      id: "shop-soaking-wet",
+      title: "Soaking Wet",
+      category: "Magnets",
+      badge: "Magnet",
+      price: "$6.71",
+      image: "images/shop/soaking-wet.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/magnet/soaking-wet-by-badsty1e/154941992/9gzh"
+    },
+    {
+      id: "shop-green-girl",
+      title: "Green Girl",
+      category: "Magnets",
+      badge: "Magnet",
+      price: "$6.15",
+      image: "images/shop/green-girl.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/magnet/green-girl-by-badsty1e/185075465/9gzh"
+    },
+    {
+      id: "shop-french-inhale",
+      title: "French Inhale",
+      category: "Stickers",
+      badge: "Sticker",
+      price: "$2.86",
+      image: "images/shop/french-inhale.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/sticker/French-Inhale-by-badsty1e/160127623/7sgk"
     },
     {
       id: "shop-red-dragon",
       title: "Red Dragon",
-      subtitle: "Neo-Tokyo Noir & Crimson Lighting",
-      category: "Wall Art & Prints",
-      price: "From $26.00",
-      redbubbleUrl: "https://www.redbubble.com/people/badsty1e/shop",
-      badge: "Editorial Pick",
-      description: "Atmospheric dark fantasy portrait sculpted with crimson gel spotlights and deep shadow play. Printed on archival Hahnemühle cotton rag and gallery-wrapped canvas."
+      category: "Stickers",
+      badge: "Sticker",
+      price: "$2.86",
+      image: "images/shop/red-dragon.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/sticker/Red-Dragon-by-badsty1e/153761101/7sgk"
     },
     {
-      id: "shop-tear-stained-babe",
-      title: "Neon Pink Tear-Stained Focus Babe",
-      subtitle: "Badstyle Street Graffiti & Pop Cyberpunk",
-      category: "Posters & Canvas",
-      price: "From $28.00",
-      redbubbleUrl: "https://www.redbubble.com/people/badsty1e/shop",
-      badge: "Trending",
-      description: "Vibrant neon magenta and hot-pink portrait with raw street graffiti layering and tear-stained editorial attitude. A standout statement art piece for modern interiors."
+      id: "shop-no-signal",
+      title: "No Signal Transmission",
+      category: "Stickers",
+      badge: "Sticker",
+      price: "$2.86",
+      image: "images/shop/no-signal-transmission.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/sticker/No-Signal-Transmission-by-badsty1e/160161707/7sgk"
     },
     {
       id: "shop-green-stary-eyed",
-      title: "Green Stary Eyed (Yeux Étoilés Verts)",
-      subtitle: "Surreal Pop Art & Holographic Gaze",
-      category: "Stickers & Magnets",
-      price: "From $14.50",
-      redbubbleUrl: "https://www.redbubble.com/people/badsty1e/shop",
-      badge: "Popular",
-      description: "Hypnotic emerald-tinted visual piece capturing starry catchlights and raw human presence. Available as holographic vinyl stickers, die-cut magnets, and postcard prints."
+      title: "Green Stary Eyed",
+      category: "Stickers",
+      badge: "Sticker",
+      price: "$2.86",
+      image: "images/shop/green-stary-eyed.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/sticker/Green-Stary-Eyed-by-badsty1e/154268947/7sgk"
     },
     {
-      id: "shop-keep-it-clean",
-      title: "Keep It Clean",
-      subtitle: "Graphic Irony & Minimalist Edge",
-      category: "Stickers & Posters",
-      price: "From $16.00",
-      redbubbleUrl: "https://www.redbubble.com/people/badsty1e/shop",
-      badge: "Signature",
-      description: "Sleek graphic illustration blending urban bathroom culture with sharp satirical typography. Durable UV-resistant vinyl designed for skate decks, laptops, and street gear."
+      id: "shop-neon-green-queen",
+      title: "Neon Green Queen",
+      category: "Stickers",
+      badge: "Sticker",
+      price: "$2.86",
+      image: "images/shop/neon-green-queen.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/sticker/Neon-Green-Queen-by-badsty1e/153111012/7sgk"
     },
     {
-      id: "shop-money-drip-goddess",
-      title: "Neon Green Money Drip Goddess",
-      subtitle: "Streetwear Culture & Gilded Defiance",
-      category: "Graphic Apparel",
-      price: "From $32.00",
-      redbubbleUrl: "https://www.redbubble.com/people/badsty1e/shop",
-      badge: "Apparel Drop",
-      description: "Bold sovereign street graphic rendered in toxic electric lime with dripping typography. Printed on heavyweight ringspun 100% combed cotton streetwear apparel."
+      id: "shop-loma-misa",
+      title: "Loma Misa",
+      category: "Stickers",
+      badge: "Sticker",
+      price: "$2.86",
+      image: "images/shop/loma-misa.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/sticker/Loma-Misa-by-badsty1e/156613766/7sgk"
     },
     {
-      id: "shop-signature-boudoir-print",
-      title: "Badstyle Archival Fine Art Print",
-      subtitle: "Signed Master Print · Custom Sizing",
-      category: "Art Prints & Posters",
-      price: "From $45.00",
-      redbubbleUrl: "https://www.redbubble.com/people/badsty1e/shop",
-      badge: "Fine Art",
-      description: "Museum-grade giclée fine art print with archival pigment inks. Rich tonal blacks, luminous skin highlights, and velvety texture on heavy watercolor stock."
+      id: "shop-i-dont-even-dance",
+      title: "I Don't Even Dance",
+      category: "Stickers",
+      badge: "Sticker",
+      price: "$2.86",
+      image: "images/shop/i-dont-even-dance.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/sticker/i-dont-even-dance-by-badsty1e/153128810/7sgk"
+    },
+    {
+      id: "shop-do-you-feel-lucky-punk",
+      title: "Do You Feel Lucky Punk?",
+      category: "Stickers",
+      badge: "Sticker",
+      price: "$2.86",
+      image: "images/shop/do-you-feel-lucky-punk.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/sticker/do-you-feel-lucky-punk-by-badsty1e/154942131/7sgk"
+    },
+    {
+      id: "shop-girl-in-the-window",
+      title: "The Girl in the Window",
+      category: "Stickers",
+      badge: "Sticker",
+      price: "$2.86",
+      image: "images/shop/the-girl-in-the-window.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/sticker/the-girl-in-the-window-by-badsty1e/162369437/7sgk"
+    },
+    {
+      id: "shop-heart-of-gold",
+      title: "Heart of Gold, Ass is Cold",
+      category: "Stickers",
+      badge: "Sticker",
+      price: "$2.86",
+      image: "images/shop/heart-of-gold-ass-is-cold.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/sticker/Heart-of-Gold-Ass-is-Cold-by-badsty1e/153110146/7sgk"
+    },
+    {
+      id: "shop-wifey-material",
+      title: "Wifey Material with Kajira Bound",
+      category: "Stickers",
+      badge: "Sticker",
+      price: "$2.86",
+      image: "images/shop/wifey-material-kajira-bound.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/sticker/Wifey-Material-with-Kajira-Bound-by-badsty1e/157947195/7sgk"
+    },
+    {
+      id: "shop-gia-steel",
+      title: "Gia Steel Live Thug Life",
+      category: "Stickers",
+      badge: "Sticker",
+      price: "$2.86",
+      image: "images/shop/gia-steel-live-thug-life.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/sticker/Gia-Steel-live-Thug-life-by-badsty1e/158150788/7sgk"
+    },
+    {
+      id: "shop-something-behind-you",
+      title: "Something Behind You is Watching You",
+      category: "Stickers",
+      badge: "Sticker",
+      price: "$2.86",
+      image: "images/shop/something-behind-you.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/sticker/Something-behind-you-is-watching-you-by-badsty1e/156613261/7sgk"
+    },
+    {
+      id: "shop-thug-life-princess",
+      title: "Thug Life Princess",
+      category: "Stickers",
+      badge: "Sticker",
+      price: "$2.86",
+      image: "images/shop/thug-life-princess.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/sticker/Thug-Life-Princess-by-badsty1e/153109784/7sgk"
+    },
+    {
+      id: "shop-pink-girl-scout-cookies",
+      title: "Pink Girl Scout Cookies for Sale",
+      category: "Stickers",
+      badge: "Sticker",
+      price: "$2.86",
+      image: "images/shop/pink-girl-scout-cookies.jpg",
+      redbubbleUrl: "https://www.redbubble.com/i/sticker/Pink-Girl-Scout-Cookies-for-Sale-by-badsty1e/156612182/7sgk"
     }
   ],
 
@@ -916,13 +892,13 @@ const SITE_DATA = {
       },
       {
         number: "02",
-        title: "Advertorial Work",
-        description: "Visual stories created for contemporary brands, fashion houses, and editorial publications with distinct high-concept styling."
+        title: "Editorial Boudoir",
+        description: "Bold, cinematic, and deeply personal boudoir sessions crafted with dramatic lighting, full posing direction, and unapologetic style."
       },
       {
         number: "03",
-        title: "Still Life Imagery",
-        description: "Highlighting texture, light, and geometry with meticulous composition, elevating everyday and luxury objects."
+        title: "Fine Art & Archival Print",
+        description: "Museum-grade Italian heirloom albums, framed fine art prints, and custom graphic art editions designed to endure."
       },
       {
         number: "04",
@@ -1159,7 +1135,7 @@ const SITE_DATA = {
       date: "August 2026",
       readTime: "4 min read",
       author: "Badstyle Photography",
-      coverImage: "images/portraits/badstyle-8374.jpg",
+      coverImage: "images/portraits/IMG_0130.jpg",
       excerpt: "How cinema lighting, water elements, smoke atmospherics, and tactile organic props converge to craft fine art photographs that look and feel like movie stills.",
       content: [
         "A truly unforgettable photograph is never an accident of luck; it is an intentional collision of mood, atmosphere, and cinematic world-building.",
@@ -1208,7 +1184,7 @@ const SITE_DATA = {
     faqs: [
       {
         question: "What types of photography do you offer?",
-        answer: "I specialize in people and portrait photography, advertorial work, still life, and creative projects. Each shoot has a distinct visual direction tailored to the story or brand."
+        answer: "I specialize in editorial boudoir, people & portrait photography, and bold creative visual projects. Each shoot has a distinct visual direction tailored to your vision and personality."
       },
       {
         question: "Who do you usually work with?",
