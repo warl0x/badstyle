@@ -10,8 +10,8 @@ const SITE_DATA = {
     email: "itsbadstyle@gmail.com",
     instagram: "@badstylephoto",
     instagramUrl: "https://instagram.com/badstylephoto",
-    twitterUrl: "https://twitter.com",
-    behanceUrl: "https://behance.net",
+    calLink: "badstylephoto/consultation",
+    twitterUrl: "https://x.com/itsbadstyle",
     location: "Orange County, California",
     copyright: "© Badstyle Photography. All rights reserved."
   },
@@ -32,7 +32,8 @@ const SITE_DATA = {
         title: "Frame 2255",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/DSC02255.jpg",
+        thumb: "images/portraits/thumbs/DSC02255.webp",
+        src: "images/portraits/full/DSC02255.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -42,7 +43,8 @@ const SITE_DATA = {
         title: "Frame 2257",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/DSC02257.jpg",
+        thumb: "images/portraits/thumbs/DSC02257.webp",
+        src: "images/portraits/full/DSC02257.webp",
         width: 1152,
         height: 2048,
         aspectRatio: "0.562"
@@ -52,7 +54,8 @@ const SITE_DATA = {
         title: "Frame 7987",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/DSC07987.jpg",
+        thumb: "images/portraits/thumbs/DSC07987.webp",
+        src: "images/portraits/full/DSC07987.webp",
         width: 1152,
         height: 2048,
         aspectRatio: "0.562"
@@ -62,7 +65,8 @@ const SITE_DATA = {
         title: "Frame 8877",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/DSC08877.jpg",
+        thumb: "images/portraits/thumbs/DSC08877.webp",
+        src: "images/portraits/full/DSC08877.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -72,7 +76,8 @@ const SITE_DATA = {
         title: "Frame 9762",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/DSC09762-Edit.jpg",
+        thumb: "images/portraits/thumbs/DSC09762-Edit.webp",
+        src: "images/portraits/full/DSC09762-Edit.webp",
         width: 1152,
         height: 2048,
         aspectRatio: "0.562"
@@ -82,7 +87,8 @@ const SITE_DATA = {
         title: "Portrait 0130",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_0130.jpg",
+        thumb: "images/portraits/thumbs/IMG_0130.webp",
+        src: "images/portraits/full/IMG_0130.webp",
         width: 2048,
         height: 1365,
         aspectRatio: "1.5"
@@ -92,7 +98,8 @@ const SITE_DATA = {
         title: "Portrait 0205",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_0205.jpg",
+        thumb: "images/portraits/thumbs/IMG_0205.webp",
+        src: "images/portraits/full/IMG_0205.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -102,7 +109,8 @@ const SITE_DATA = {
         title: "Portrait 0815",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_0815.jpg",
+        thumb: "images/portraits/thumbs/IMG_0815.webp",
+        src: "images/portraits/full/IMG_0815.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -112,7 +120,8 @@ const SITE_DATA = {
         title: "Portrait 1031",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_1031.jpg",
+        thumb: "images/portraits/thumbs/IMG_1031.webp",
+        src: "images/portraits/full/IMG_1031.webp",
         width: 2048,
         height: 1366,
         aspectRatio: "1.499"
@@ -122,7 +131,8 @@ const SITE_DATA = {
         title: "Portrait 1309",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_1309.jpg",
+        thumb: "images/portraits/thumbs/IMG_1309.webp",
+        src: "images/portraits/full/IMG_1309.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -132,7 +142,8 @@ const SITE_DATA = {
         title: "Portrait 1315",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_1315.jpg",
+        thumb: "images/portraits/thumbs/IMG_1315.webp",
+        src: "images/portraits/full/IMG_1315.webp",
         width: 2048,
         height: 1365,
         aspectRatio: "1.5"
@@ -142,7 +153,8 @@ const SITE_DATA = {
         title: "Portrait 1577",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_1577.jpg",
+        thumb: "images/portraits/thumbs/IMG_1577.webp",
+        src: "images/portraits/full/IMG_1577.webp",
         width: 1366,
         height: 2048,
         aspectRatio: "0.667"
@@ -152,7 +164,8 @@ const SITE_DATA = {
         title: "Portrait 1913",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_1913-Edit.jpg",
+        thumb: "images/portraits/thumbs/IMG_1913-Edit.webp",
+        src: "images/portraits/full/IMG_1913-Edit.webp",
         width: 1366,
         height: 2048,
         aspectRatio: "0.667"
@@ -162,7 +175,8 @@ const SITE_DATA = {
         title: "Portrait 2524",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_2524-Edit.jpg",
+        thumb: "images/portraits/thumbs/IMG_2524-Edit.webp",
+        src: "images/portraits/full/IMG_2524-Edit.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -172,7 +186,8 @@ const SITE_DATA = {
         title: "Portrait 2746",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_2746.jpg",
+        thumb: "images/portraits/thumbs/IMG_2746.webp",
+        src: "images/portraits/full/IMG_2746.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -182,7 +197,8 @@ const SITE_DATA = {
         title: "Portrait 2785",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_2785.jpg",
+        thumb: "images/portraits/thumbs/IMG_2785.webp",
+        src: "images/portraits/full/IMG_2785.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -192,7 +208,8 @@ const SITE_DATA = {
         title: "Portrait 2813",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_2813-Edit.jpg",
+        thumb: "images/portraits/thumbs/IMG_2813-Edit.webp",
+        src: "images/portraits/full/IMG_2813-Edit.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -202,7 +219,8 @@ const SITE_DATA = {
         title: "Portrait 3096",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_3096.jpg",
+        thumb: "images/portraits/thumbs/IMG_3096.webp",
+        src: "images/portraits/full/IMG_3096.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -212,7 +230,8 @@ const SITE_DATA = {
         title: "Portrait 3564",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_3564.jpg",
+        thumb: "images/portraits/thumbs/IMG_3564.webp",
+        src: "images/portraits/full/IMG_3564.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -222,7 +241,8 @@ const SITE_DATA = {
         title: "Portrait 3669",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_3669.jpg",
+        thumb: "images/portraits/thumbs/IMG_3669.webp",
+        src: "images/portraits/full/IMG_3669.webp",
         width: 2048,
         height: 1365,
         aspectRatio: "1.5"
@@ -232,7 +252,8 @@ const SITE_DATA = {
         title: "Portrait 3987",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_3987.jpg",
+        thumb: "images/portraits/thumbs/IMG_3987.webp",
+        src: "images/portraits/full/IMG_3987.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -242,7 +263,8 @@ const SITE_DATA = {
         title: "Portrait 4368",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_4368.jpg",
+        thumb: "images/portraits/thumbs/IMG_4368.webp",
+        src: "images/portraits/full/IMG_4368.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -252,7 +274,8 @@ const SITE_DATA = {
         title: "Portrait 4626",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_4626-Edit.jpg",
+        thumb: "images/portraits/thumbs/IMG_4626-Edit.webp",
+        src: "images/portraits/full/IMG_4626-Edit.webp",
         width: 2048,
         height: 1366,
         aspectRatio: "1.499"
@@ -262,7 +285,8 @@ const SITE_DATA = {
         title: "Portrait 4778",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_4778.jpg",
+        thumb: "images/portraits/thumbs/IMG_4778.webp",
+        src: "images/portraits/full/IMG_4778.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -272,7 +296,8 @@ const SITE_DATA = {
         title: "Portrait 5848",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_5848.jpg",
+        thumb: "images/portraits/thumbs/IMG_5848.webp",
+        src: "images/portraits/full/IMG_5848.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -282,7 +307,8 @@ const SITE_DATA = {
         title: "Portrait 6030",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_6030-Edit.jpg",
+        thumb: "images/portraits/thumbs/IMG_6030-Edit.webp",
+        src: "images/portraits/full/IMG_6030-Edit.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -292,7 +318,8 @@ const SITE_DATA = {
         title: "Portrait 6081",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_6081.jpg",
+        thumb: "images/portraits/thumbs/IMG_6081.webp",
+        src: "images/portraits/full/IMG_6081.webp",
         width: 2048,
         height: 1365,
         aspectRatio: "1.5"
@@ -302,7 +329,8 @@ const SITE_DATA = {
         title: "Portrait 6610",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_6610.jpg",
+        thumb: "images/portraits/thumbs/IMG_6610.webp",
+        src: "images/portraits/full/IMG_6610.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -312,7 +340,8 @@ const SITE_DATA = {
         title: "Portrait 6748",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_6748.jpg",
+        thumb: "images/portraits/thumbs/IMG_6748.webp",
+        src: "images/portraits/full/IMG_6748.webp",
         width: 2048,
         height: 1365,
         aspectRatio: "1.5"
@@ -322,7 +351,8 @@ const SITE_DATA = {
         title: "Portrait 6849",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_6849-Edit.jpg",
+        thumb: "images/portraits/thumbs/IMG_6849-Edit.webp",
+        src: "images/portraits/full/IMG_6849-Edit.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -332,7 +362,8 @@ const SITE_DATA = {
         title: "Portrait 6984",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_6984.jpg",
+        thumb: "images/portraits/thumbs/IMG_6984.webp",
+        src: "images/portraits/full/IMG_6984.webp",
         width: 2048,
         height: 1365,
         aspectRatio: "1.5"
@@ -342,7 +373,8 @@ const SITE_DATA = {
         title: "Portrait 7092",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_7092.jpg",
+        thumb: "images/portraits/thumbs/IMG_7092.webp",
+        src: "images/portraits/full/IMG_7092.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -352,7 +384,8 @@ const SITE_DATA = {
         title: "Portrait 7254",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_7254.jpg",
+        thumb: "images/portraits/thumbs/IMG_7254.webp",
+        src: "images/portraits/full/IMG_7254.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -362,7 +395,8 @@ const SITE_DATA = {
         title: "Portrait 7338",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_7338.jpg",
+        thumb: "images/portraits/thumbs/IMG_7338.webp",
+        src: "images/portraits/full/IMG_7338.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -372,7 +406,8 @@ const SITE_DATA = {
         title: "Portrait 7375",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_7375.jpg",
+        thumb: "images/portraits/thumbs/IMG_7375.webp",
+        src: "images/portraits/full/IMG_7375.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -382,7 +417,8 @@ const SITE_DATA = {
         title: "Portrait 7541",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_7541-Edit.jpg",
+        thumb: "images/portraits/thumbs/IMG_7541-Edit.webp",
+        src: "images/portraits/full/IMG_7541-Edit.webp",
         width: 1366,
         height: 2048,
         aspectRatio: "0.667"
@@ -392,7 +428,8 @@ const SITE_DATA = {
         title: "Portrait 7911",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_7911.jpg",
+        thumb: "images/portraits/thumbs/IMG_7911.webp",
+        src: "images/portraits/full/IMG_7911.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -402,7 +439,8 @@ const SITE_DATA = {
         title: "Portrait 8529",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_8529-Edit.jpg",
+        thumb: "images/portraits/thumbs/IMG_8529-Edit.webp",
+        src: "images/portraits/full/IMG_8529-Edit.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -412,7 +450,8 @@ const SITE_DATA = {
         title: "Portrait 8874",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_8874.jpg",
+        thumb: "images/portraits/thumbs/IMG_8874.webp",
+        src: "images/portraits/full/IMG_8874.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -422,7 +461,8 @@ const SITE_DATA = {
         title: "Portrait 9298",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_9298.jpg",
+        thumb: "images/portraits/thumbs/IMG_9298.webp",
+        src: "images/portraits/full/IMG_9298.webp",
         width: 2048,
         height: 1365,
         aspectRatio: "1.5"
@@ -432,7 +472,8 @@ const SITE_DATA = {
         title: "Portrait 9364",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_9364-Edit.jpg",
+        thumb: "images/portraits/thumbs/IMG_9364-Edit.webp",
+        src: "images/portraits/full/IMG_9364-Edit.webp",
         width: 2048,
         height: 1365,
         aspectRatio: "1.5"
@@ -442,7 +483,8 @@ const SITE_DATA = {
         title: "Portrait 9836",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_9836.jpg",
+        thumb: "images/portraits/thumbs/IMG_9836.webp",
+        src: "images/portraits/full/IMG_9836.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -452,7 +494,8 @@ const SITE_DATA = {
         title: "Portrait 9931",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/IMG_9931.jpg",
+        thumb: "images/portraits/thumbs/IMG_9931.webp",
+        src: "images/portraits/full/IMG_9931.webp",
         width: 2048,
         height: 1365,
         aspectRatio: "1.5"
@@ -462,7 +505,8 @@ const SITE_DATA = {
         title: "Series 1363",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/untitled-1363-Edit.jpg",
+        thumb: "images/portraits/thumbs/untitled-1363-Edit.webp",
+        src: "images/portraits/full/untitled-1363-Edit.webp",
         width: 2048,
         height: 1365,
         aspectRatio: "1.5"
@@ -472,7 +516,8 @@ const SITE_DATA = {
         title: "Series 5840 ii",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/untitled-5840-2.jpg",
+        thumb: "images/portraits/thumbs/untitled-5840-2.webp",
+        src: "images/portraits/full/untitled-5840-2.webp",
         width: 2048,
         height: 1365,
         aspectRatio: "1.5"
@@ -482,7 +527,8 @@ const SITE_DATA = {
         title: "4192 ii",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/untitled-untitled-shoot-IMG_4192-2.jpg",
+        thumb: "images/portraits/thumbs/untitled-untitled-shoot-IMG_4192-2.webp",
+        src: "images/portraits/full/untitled-untitled-shoot-IMG_4192-2.webp",
         width: 2048,
         height: 1365,
         aspectRatio: "1.5"
@@ -492,7 +538,8 @@ const SITE_DATA = {
         title: "Portrait 6148",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/untitled-untitled-shoot-IMG_6148.jpg",
+        thumb: "images/portraits/thumbs/untitled-untitled-shoot-IMG_6148.webp",
+        src: "images/portraits/full/untitled-untitled-shoot-IMG_6148.webp",
         width: 2048,
         height: 1366,
         aspectRatio: "1.499"
@@ -502,7 +549,8 @@ const SITE_DATA = {
         title: "Portrait 7953",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/untitled-untitled-shoot-IMG_7953.jpg",
+        thumb: "images/portraits/thumbs/untitled-untitled-shoot-IMG_7953.webp",
+        src: "images/portraits/full/untitled-untitled-shoot-IMG_7953.webp",
         width: 2048,
         height: 1365,
         aspectRatio: "1.5"
@@ -512,7 +560,8 @@ const SITE_DATA = {
         title: "Mg 4932",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/_MG_4932.jpg",
+        thumb: "images/portraits/thumbs/_MG_4932.webp",
+        src: "images/portraits/full/_MG_4932.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -522,7 +571,8 @@ const SITE_DATA = {
         title: "Mg 5871",
         category: "People & Portrait",
         year: "2026",
-        src: "images/portraits/_MG_5871.jpg",
+        thumb: "images/portraits/thumbs/_MG_5871.webp",
+        src: "images/portraits/full/_MG_5871.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
@@ -831,7 +881,7 @@ const SITE_DATA = {
   about: {
     heroHeading: "Welcome to Badstyle Photography",
     heroSubheading: "Lead Photographer & Creative Force",
-    heroImage: "images/badstyle_about.jpg",
+    heroImage: "images/badstyle_about.webp",
     bio: [
       "I’m Adam, the lead photographer and creative force behind Badstyle Photography. Based right here in Orange County, I specialize in crafting bold, cinematic, and deeply personal boudoir portraits that celebrate exactly who you are.",
       "My approach to photography is rooted in a dynamic visual style—drawing inspiration from vivid graphic art, edgy street aesthetics, and striking editorial portraiture. I don’t just want to take a standard photo; I want to create a standout piece of art that makes you feel powerful, confident, and unapologetically yourself."
@@ -1097,7 +1147,7 @@ const SITE_DATA = {
       date: "October 2026",
       readTime: "5 min read",
       author: "Badstyle Photography",
-      coverImage: "images/portraits/DSC08877.jpg",
+      coverImage: "images/portraits/thumbs/DSC08877.webp",
       excerpt: "For decades, intimate portraiture was trapped in a formula: marabou feathers, white sheets, and contrived vulnerability designed for a male gaze. Here is why the modern muse is trading pastels for power suits, shadow, and sovereignty.",
       content: [
         "For decades, the commercial boudoir industry operated under a predictable, tired playbook: pastel lace, oversized marabou robes, synthetic satin sheets, and poses engineered to look submissive, apologetic, and coy.",
@@ -1114,7 +1164,7 @@ const SITE_DATA = {
       date: "September 2026",
       readTime: "6 min read",
       author: "Badstyle Photography",
-      coverImage: "images/portraits/DSC02255.jpg",
+      coverImage: "images/portraits/thumbs/DSC02255.webp",
       excerpt: "You don't need a drawer full of delicate lace to create magnetic intimate portraits. Discover how menswear silhouettes, textured leather, and architectural shapes create photos that look straight out of Vogue.",
       content: [
         "The single most common fear we hear from first-time clients during our consultation is: 'I really want to do this, but I hate lingerie. I don't wear it, I don't feel like myself in it, and the idea of wearing a frilly teddy makes me want to disappear.'",
@@ -1135,7 +1185,7 @@ const SITE_DATA = {
       date: "August 2026",
       readTime: "4 min read",
       author: "Badstyle Photography",
-      coverImage: "images/portraits/IMG_0130.jpg",
+      coverImage: "images/portraits/thumbs/IMG_0130.webp",
       excerpt: "How cinema lighting, water elements, smoke atmospherics, and tactile organic props converge to craft fine art photographs that look and feel like movie stills.",
       content: [
         "A truly unforgettable photograph is never an accident of luck; it is an intentional collision of mood, atmosphere, and cinematic world-building.",

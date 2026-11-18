@@ -20,6 +20,8 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22serif%22 font-weight=%22bold%22>B</text></svg>" />
 
   <!-- Fonts & Styles -->
+  <link rel="stylesheet" href="vendor/photoswipe/photoswipe.css" />
+  <link rel="stylesheet" href="vendor/lenis/lenis.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -450,10 +452,16 @@
               </div>
             </div>
 
-            <!-- Right Column: Interactive Form -->
+            <!-- Right Column: Interactive Form & Cal.com Scheduler -->
             <div class="contact-form-wrap">
+              <div class="booking-mode-tabs" role="tablist" aria-label="Booking Method">
+                <button type="button" class="booking-tab-btn active" data-booking-tab="inquiry" role="tab" aria-selected="true">Send Session Inquiry</button>
+                <button type="button" class="booking-tab-btn" data-booking-tab="calendar" role="tab" aria-selected="false">Book Free Call (Cal.com)</button>
+              </div>
+
+              <div id="booking-panel-inquiry" class="booking-panel active">
               <h3 class="form-title">Send a Message</h3>
-              <p class="form-desc">Have any questions? Reach out to me from my contact form and I will personally get back to you shortly.</p>
+              <p class="form-desc">Have any questions? Reach out to me from my contact form and your inquiry will be sent directly to <strong>itsbadstyle@gmail.com</strong>.</p>
 
               <form id="contact-form" class="contact-form">
                 <div class="form-row-2col">
@@ -529,6 +537,20 @@
 
                 <div id="form-feedback" class="form-feedback" role="alert"></div>
               </form>
+              </div>
+
+              <!-- Cal.com Embedded Consultation Scheduler -->
+              <div id="booking-panel-calendar" class="booking-panel" hidden>
+                <h3 class="form-title">Schedule a Free 15-Min Consultation</h3>
+                <p class="form-desc">Pick an open slot directly on my calendar via Cal.com to discuss wardrobe, mood boards, and shoot dates.</p>
+                <div class="cal-embed-shell">
+                  <iframe id="cal-embed-iframe" class="cal-embed-frame" title="Schedule a consultation with Badstyle Photography" loading="lazy"></iframe>
+                </div>
+                <div class="cal-direct-row">
+                  <span>Prefer opening the full scheduler?</span>
+                  <a id="cal-direct-link" href="https://cal.com/badstylephoto/consultation" target="_blank" rel="noopener noreferrer" class="yelp-text-link">Open Cal.com in New Tab &nearr;</a>
+                </div>
+              </div>
             </div>
 
           </div>
@@ -570,18 +592,10 @@
             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
           </svg>
         </a>
-        <a href="https://twitter.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+        <a href="https://x.com/itsbadstyle" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="X (@itsbadstyle)">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
             <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
             <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
-          </svg>
-        </a>
-        <a href="https://behance.net" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Behance">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M3 8h6a3 3 0 0 1 0 6h-6z"></path>
-            <path d="M3 14h7a3 3 0 0 1 0 6h-7z"></path>
-            <path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1.5"></path>
-            <line x1="15" y1="9" x2="20" y2="9"></line>
           </svg>
         </a>
         <a href="mailto:itsbadstyle@gmail.com" class="social-link" aria-label="Email">
@@ -671,6 +685,11 @@
         </footer>
       </div>
     </div>
+
+  <!-- Vendor Libraries (Lenis Smooth Scroll & PhotoSwipe v5 Lightbox) -->
+  <script src="vendor/lenis/lenis.min.js"></script>
+  <script src="vendor/photoswipe/photoswipe.umd.min.js"></script>
+  <script src="vendor/photoswipe/photoswipe-lightbox.umd.min.js"></script>
 
   <!-- Scripts -->
   <script src="data.js"></script>

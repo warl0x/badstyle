@@ -1,0 +1,61 @@
+backend:
+  name: github
+  repo: warl0x/badstyle
+  branch: main
+
+media_folder: "images/portraits"
+public_folder: "images/portraits"
+
+site_url: "https://warl0x.github.io/badstyle/"
+display_url: "https://warl0x.github.io/badstyle/"
+
+collections:
+  - name: "content"
+    label: "Studio Content"
+    files:
+      - name: "portraits"
+        label: "Portrait Gallery"
+        file: "data/portraits.json"
+        fields:
+          - label: "Portraits"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}} ({{fields.year}})"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Category", name: "category", widget: "string", default: "People & Portrait" }
+              - { label: "Year", name: "year", widget: "string", default: "2026" }
+              - { label: "Full Image", name: "src", widget: "image", media_folder: "/images/portraits", public_folder: "images/portraits" }
+              - { label: "Thumbnail (optional WebP)", name: "thumb", widget: "string", required: false }
+              - { label: "Width (px)", name: "width", widget: "number", value_type: "int", default: 1365 }
+              - { label: "Height (px)", name: "height", widget: "number", value_type: "int", default: 2048 }
+              - { label: "Aspect Ratio", name: "aspectRatio", widget: "string", default: "0.667" }
+
+      - name: "shop"
+        label: "Redbubble Shop"
+        file: "data/shop.json"
+        fields:
+          - label: "Products"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.price}}"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Category", name: "category", widget: "select", options: ["Posters", "Magnets", "Stickers", "Apparel & Home"] }
+              - { label: "Product Badge", name: "badge", widget: "string" }
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Mockup Image", name: "image", widget: "image", media_folder: "/images/shop", public_folder: "images/shop" }
+              - { label: "Redbubble Product URL", name: "redbubbleUrl", widget: "string" }
+
+      - name: "settings"
+        label: "Site & Booking Settings"
+        file: "data/settings.json"
+        fields:
+          - { label: "Contact Email", name: "email", widget: "string", default: "itsbadstyle@gmail.com" }
+          - { label: "Instagram Handle", name: "instagram", widget: "string", default: "@badstylephoto" }
+          - { label: "Instagram URL", name: "instagramUrl", widget: "string", default: "https://instagram.com/badstylephoto" }
+          - { label: "Studio Location", name: "location", widget: "string", default: "Orange County, California" }
+          - { label: "Cal.com Booking Slug (e.g. username/event)", name: "calLink", widget: "string", default: "badstylephoto/consultation" }
+          - { label: "About Me Portrait", name: "aboutImage", widget: "image", media_folder: "/images", public_folder: "images" }

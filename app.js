@@ -16,6 +16,8 @@
       galleryKey: 'portrait',
       currentIndex: 0
     },
+    lenis: null,
+    calLoaded: false,
     animatedCountersDone: false
   };
 
@@ -54,6 +56,12 @@
     htmlEl.setAttribute('data-theme', state.theme);
     localStorage.setItem('badstyle_theme', state.theme);
     updateThemeIcon();
+
+    if (state.calLoaded) {
+      const calIframe = document.getElementById('cal-embed-iframe');
+      const slug = (SITE_DATA.brand && SITE_DATA.brand.calLink) || 'badstylephoto/consultation';
+      if (calIframe) calIframe.src = `https://cal.com/${slug}?embed=true&theme=${state.theme}`;
+    }
   }
 
   function updateThemeIcon() {
@@ -88,6 +96,8 @@
     grid.innerHTML = '';
 
     items.forEach((item, index) => {
+      const thumbSrc = item.thumb || item.src;
+
       // 1. Horizontal Item
       const hItem = document.createElement('div');
       hItem.className = 'gallery-item';
@@ -95,7 +105,7 @@
       hItem.setAttribute('tabindex', '0');
       hItem.setAttribute('aria-label', item.title);
       hItem.innerHTML = `
-        <img src="${item.src}" alt="${item.title}" loading="${index < 4 ? 'eager' : 'lazy'}" />
+        <img src="${thumbSrc}" alt="${item.title}" width="${item.width || ''}" height="${item.height || ''}" decoding="async" loading="${index < 5 ? 'eager' : 'lazy'}" />
         <div class="item-overlay">
           <div class="item-title">${item.title}</div>
           <div class="item-meta">${item.category} · ${item.year}</div>
@@ -119,7 +129,7 @@
       gItem.setAttribute('tabindex', '0');
       gItem.setAttribute('aria-label', item.title);
       gItem.innerHTML = `
-        <img src="${item.src}" alt="${item.title}" loading="lazy" />
+        <img src="${thumbSrc}" alt="${item.title}" width="${item.width || ''}" height="${item.height || ''}" decoding="async" loading="lazy" />
         <div class="item-overlay">
           <div class="item-title">${item.title}</div>
           <div class="item-meta">${item.category} · ${item.year}</div>
@@ -377,7 +387,7 @@
     const feedback = document.getElementById('form-feedback');
     if (!form || !feedback) return;
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       // Check privacy checkbox
@@ -401,34 +411,120 @@
         <svg style="animation: spin 1s linear infinite; width: 16px; height: 16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor">
           <circle cx="12" cy="12" r="10" stroke-opacity="0.25"/>
           <path d="M12 2a10 10 0 0 1 10 10"/>
-        </svg> Submitting Booking Inquiry...
+        </svg> Sending Inquiry...
       `;
 
-      const clientName = document.getElementById('contact-name')?.value || 'Client';
+      const clientName = document.getElementById('contact-name')?.value?.trim() || 'Client';
+      const clientEmail = document.getElementById('contact-email')?.value?.trim() || '';
+      const clientPhone = document.getElementById('contact-phone')?.value?.trim() || 'Not provided';
+      const preferredDate = document.getElementById('contact-date')?.value || 'Flexible';
       const chosenCollection = document.getElementById('contact-collection')?.value || 'Selected Collection';
       const chosenAesthetic = document.getElementById('contact-aesthetic')?.value || 'Custom Vibe';
+      const visionNotes = document.getElementById('contact-message')?.value?.trim() || '';
+      const targetEmail = (SITE_DATA.brand && SITE_DATA.brand.email) || 'itsbadstyle@gmail.com';
 
-      setTimeout(() => {
+      const payload = {
+        _subject: `New Badstyle Boudoir Inquiry — ${clientName} (${chosenCollection})`,
+        _template: 'table',
+        _captcha: 'false',
+        name: clientName,
+        email: clientEmail,
+        phone: clientPhone,
+        preferred_date: preferredDate,
+        collection: chosenCollection,
+        aesthetic: chosenAesthetic,
+        message: visionNotes,
+        privacy_acknowledged: 'Yes (100% Confidentiality Acknowledged)'
+      };
+
+      try {
+        const res = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(targetEmail)}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
         form.reset();
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalText;
         feedback.className = 'form-feedback success';
         feedback.style.display = 'block';
         feedback.style.backgroundColor = '';
         feedback.style.color = '';
         feedback.style.borderColor = '';
         feedback.innerHTML = `
-          <strong>Inquiry Confirmed, ${clientName}!</strong><br>
-          We received your request for <em>${chosenCollection}</em> focusing on <em>${chosenAesthetic}</em>.<br>
-          Your session details and images are held under strict 100% confidentiality. We will be in touch within 24 hours to schedule your private styling consultation.
+          <strong>Inquiry Sent, ${clientName}!</strong><br>
+          Your request for <em>${chosenCollection}</em> (${chosenAesthetic}) has been delivered directly to <strong>${targetEmail}</strong>.<br>
+          Your session details are held under strict 100% confidentiality. Expect a personal reply within 24 hours.
         `;
+      } catch (err) {
+        const mailSubject = encodeURIComponent(`Badstyle Session Inquiry — ${clientName} (${chosenCollection})`);
+        const mailBody = encodeURIComponent(
+          `Name: ${clientName}\nEmail: ${clientEmail}\nPhone: ${clientPhone}\nPreferred Date: ${preferredDate}\nCollection: ${chosenCollection}\nAesthetic: ${chosenAesthetic}\n\nVision & Notes:\n${visionNotes}`
+        );
+        feedback.className = 'form-feedback';
+        feedback.style.display = 'block';
+        feedback.style.backgroundColor = 'rgba(245, 158, 11, 0.12)';
+        feedback.style.color = 'var(--text-primary)';
+        feedback.style.borderColor = 'rgba(245, 158, 11, 0.35)';
+        feedback.innerHTML = `
+          <strong>Direct Email Ready:</strong> Couldn't reach the form relay right now.
+          <a href="mailto:${targetEmail}?subject=${mailSubject}&body=${mailBody}" style="text-decoration: underline; font-weight: 600;">Click here to send directly to ${targetEmail}</a>.
+        `;
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
         feedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
-        setTimeout(() => {
-          feedback.style.display = 'none';
-        }, 12000);
-      }, 1200);
+      }
     });
+  }
+
+  function setupCalBooking() {
+    const tabs = document.querySelectorAll('.booking-tab-btn');
+    const inquiryPanel = document.getElementById('booking-panel-inquiry');
+    const calendarPanel = document.getElementById('booking-panel-calendar');
+    const calIframe = document.getElementById('cal-embed-iframe');
+    const calDirectLink = document.getElementById('cal-direct-link');
+    if (!tabs.length || !inquiryPanel || !calendarPanel) return;
+
+    function getCalSlug() {
+      return (SITE_DATA.brand && SITE_DATA.brand.calLink) || 'badstylephoto/consultation';
+    }
+
+    function updateCalUrls() {
+      const slug = getCalSlug();
+      if (calDirectLink) calDirectLink.href = `https://cal.com/${slug}`;
+      if (calIframe && state.calLoaded) {
+        calIframe.src = `https://cal.com/${slug}?embed=true&theme=${state.theme}`;
+      }
+    }
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = tab.getAttribute('data-booking-tab');
+        tabs.forEach(t => {
+          const active = t === tab;
+          t.classList.toggle('active', active);
+          t.setAttribute('aria-selected', String(active));
+        });
+
+        const showCal = target === 'calendar';
+        inquiryPanel.hidden = showCal;
+        inquiryPanel.classList.toggle('active', !showCal);
+        calendarPanel.hidden = !showCal;
+        calendarPanel.classList.toggle('active', showCal);
+
+        if (showCal && calIframe && !state.calLoaded) {
+          state.calLoaded = true;
+          updateCalUrls();
+        }
+      });
+    });
+
+    updateCalUrls();
   }
 
 
@@ -884,12 +980,60 @@
   }
 
   // ==========================================================================
-  // FULLSCREEN LIGHTBOX
+  // FULLSCREEN LIGHTBOX (PHOTOSWIPE v5 WITH FALLBACK)
   // ==========================================================================
   function openLightbox(galleryKey, index) {
-    const items = SITE_DATA.galleries[galleryKey === 'still-life' ? 'still_life' : galleryKey];
+    const items = SITE_DATA.galleries[galleryKey];
     if (!items || !items[index]) return;
 
+    // Prefer PhotoSwipe v5 for pinch-to-zoom, swipe-to-dismiss, and retina panning
+    if (typeof window.PhotoSwipe === 'function') {
+      const dataSource = items.map(item => ({
+        src: item.src,
+        msrc: item.thumb || item.src,
+        width: Number(item.width) || 1365,
+        height: Number(item.height) || 2048,
+        alt: item.title,
+        caption: `${item.title} · ${item.category} · ${item.year}`
+      }));
+
+      const pswp = new window.PhotoSwipe({
+        dataSource,
+        index,
+        bgOpacity: 0.96,
+        showHideAnimationType: 'fade',
+        padding: { top: 24, bottom: 56, left: 20, right: 20 }
+      });
+
+      pswp.on('uiRegister', () => {
+        pswp.ui.registerElement({
+          name: 'custom-caption',
+          order: 9,
+          isButton: false,
+          appendTo: 'root',
+          html: '',
+          onInit: (el) => {
+            el.className = 'pswp__custom-caption';
+            pswp.on('change', () => {
+              const curr = pswp.currSlide && pswp.currSlide.data;
+              el.textContent = curr ? curr.caption : '';
+            });
+          }
+        });
+      });
+
+      pswp.on('afterInit', () => {
+        if (state.lenis) state.lenis.stop();
+      });
+      pswp.on('destroy', () => {
+        if (state.lenis) state.lenis.start();
+      });
+
+      pswp.init();
+      return;
+    }
+
+    // Fallback built-in lightbox
     state.lightbox.isOpen = true;
     state.lightbox.galleryKey = galleryKey;
     state.lightbox.currentIndex = index;
@@ -1020,7 +1164,11 @@
 
     // Reset scroll if not gallery
     if (!isGallery) {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (state.lenis) {
+        state.lenis.scrollTo(0, { immediate: true });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     }
 
     // Trigger counters if navigating to About
@@ -1084,10 +1232,84 @@
   }
 
   // ==========================================================================
+  // LENIS SMOOTH SCROLLING
+  // ==========================================================================
+  function initLenis() {
+    if (typeof window.Lenis !== 'function') return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const lenis = new window.Lenis({
+      duration: 1.1,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+      prevent: (node) => Boolean(node && node.closest && node.closest('.horizontal-track, .pswp, .journal-modal, .mobile-drawer, iframe'))
+    });
+
+    state.lenis = lenis;
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }
+
+  // ==========================================================================
+  // SVELTIA CMS LIVE JSON HYDRATION
+  // ==========================================================================
+  async function loadCmsOverrides() {
+    try {
+      const [portraitsRes, shopRes, settingsRes] = await Promise.allSettled([
+        fetch('data/portraits.json').then(r => (r.ok ? r.json() : null)),
+        fetch('data/shop.json').then(r => (r.ok ? r.json() : null)),
+        fetch('data/settings.json').then(r => (r.ok ? r.json() : null))
+      ]);
+
+      let portraitsUpdated = false;
+      if (portraitsRes.status === 'fulfilled' && portraitsRes.value && Array.isArray(portraitsRes.value.items) && portraitsRes.value.items.length) {
+        SITE_DATA.galleries.portrait = portraitsRes.value.items;
+        portraitsUpdated = true;
+      }
+
+      if (shopRes.status === 'fulfilled' && shopRes.value && Array.isArray(shopRes.value.items) && shopRes.value.items.length) {
+        SITE_DATA.shop = shopRes.value.items;
+        const allBtn = document.querySelector('.shop-filter-btn[data-filter="all"]');
+        if (allBtn) allBtn.textContent = `All Designs (${SITE_DATA.shop.length})`;
+        renderShopPage();
+      }
+
+      if (settingsRes.status === 'fulfilled' && settingsRes.value) {
+        const s = settingsRes.value;
+        if (s.email) SITE_DATA.brand.email = s.email;
+        if (s.instagram) SITE_DATA.brand.instagram = s.instagram;
+        if (s.instagramUrl) SITE_DATA.brand.instagramUrl = s.instagramUrl;
+        if (s.location) SITE_DATA.brand.location = s.location;
+        if (s.calLink) {
+          SITE_DATA.brand.calLink = s.calLink;
+          const calDirect = document.getElementById('cal-direct-link');
+          if (calDirect) calDirect.href = `https://cal.com/${s.calLink}`;
+        }
+        if (s.aboutImage) {
+          SITE_DATA.about.portraitImage = s.aboutImage;
+          const aboutPortrait = document.getElementById('about-portrait');
+          if (aboutPortrait) aboutPortrait.src = s.aboutImage;
+        }
+      }
+
+      if (portraitsUpdated) {
+        renderGalleries();
+      }
+    } catch (err) {
+      console.warn('CMS override check skipped:', err);
+    }
+  }
+
+  // ==========================================================================
   // APP BOOTSTRAP
   // ==========================================================================
   function init() {
     initTheme();
+    initLenis();
     renderGalleries();
     renderExperiencePage();
     renderShopPage();
@@ -1095,9 +1317,11 @@
     renderJournalPage();
     renderAboutPage();
     renderContactPage();
+    setupCalBooking();
     setupJournalModal();
     setupLightboxEvents();
     setupRouting();
+    loadCmsOverrides();
 
     // Event Listeners
     if (themeToggleBtn) themeToggleBtn.addEventListener('click', toggleTheme);

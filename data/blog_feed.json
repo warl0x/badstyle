@@ -1,18 +1,209 @@
 {
-  "lastScraped": "October 14, 2026",
-  "timestamp": "2026-10-15T04:58:58.430Z",
-  "syncFrequency": "Updated Weekly (Daily Automated Scraping)",
-  "articleCount": 12,
+  "lastScraped": "Nov 18, 2026",
+  "timestamp": "2026-11-18T13:29:35.808Z",
+  "syncFrequency": "Updated Weekly via GitHub Actions",
+  "articleCount": 16,
   "articles": [
+    {
+      "id": "boudoir-aftershoot-vs-narrative-ai-culling-and-edi",
+      "title": "Aftershoot vs Narrative: AI Culling and Editing Compared",
+      "source": "Shotkit",
+      "sourceIcon": "S",
+      "date": "Nov 18, 2026",
+      "rawDate": "2026-11-18T11:00:16.000Z",
+      "readTime": "6 min read",
+      "category": "Posing & Direction",
+      "url": "https://shotkit.com/aftershoot-vs-narrative/",
+      "excerpt": "Aftershoot vs Narrative compared: AI culling speed, editing, retouching, workflow, features and pricing for wedding and portrait photographers.",
+      "keyPoints": [
+        "Published by Shotkit under Posing & Direction",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
+    {
+      "id": "boudoir-why-your-portraits-look-soft-even-with-gre",
+      "title": "Why Your Portraits Look Soft Even With Great Gear",
+      "source": "Fstoppers",
+      "sourceIcon": "F",
+      "date": "Nov 18, 2026",
+      "rawDate": "2026-11-18T10:03:02.000Z",
+      "readTime": "9 min read",
+      "category": "Lighting & Gear",
+      "url": "https://fstoppers.com/education/why-your-portraits-look-soft-even-great-gear-905572?utm_source=fstoppers&utm_medium=RSS&utm_campaign=rss_feed_articles",
+      "excerpt": "Soft eyes, a face that's slightly blurred, and skin that looks a little green in Lightroom are easy to overlook on a rear screen and hard to ignore once you're editing at full size. Most of those problems trace back to a…",
+      "keyPoints": [
+        "Published by Fstoppers under Lighting & Gear",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
+    {
+      "id": "boudoir-in-1839-a-philadelphian-took-one-of-the-fi",
+      "title": "In 1839, a Philadelphian Took One of the First Selfies Ever Made",
+      "source": "Fstoppers",
+      "sourceIcon": "F",
+      "date": "Nov 17, 2026",
+      "rawDate": "2026-11-17T22:03:02.000Z",
+      "readTime": "9 min read",
+      "category": "Lighting & Gear",
+      "url": "https://fstoppers.com/historical/1839-philadelphian-took-one-first-selfies-ever-made-904535?utm_source=fstoppers&utm_medium=RSS&utm_campaign=rss_feed_articles",
+      "excerpt": "A young man with tousled hair, a popped collar, and his arms loosely folded stares just past the lens, caught mid-thought in the daylight of a Philadelphia backyard. The plate is a daguerreotype, made in the fall of 1839…",
+      "keyPoints": [
+        "Published by Fstoppers under Lighting & Gear",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
+    {
+      "id": "boudoir-a-portrait-photographer-puts-6-common-ai-r",
+      "title": "A Portrait Photographer Puts 6 Common AI Retouching Myths to the Test",
+      "source": "PetaPixel",
+      "sourceIcon": "P",
+      "date": "Nov 17, 2026",
+      "rawDate": "2026-11-17T21:56:01.000Z",
+      "readTime": "7 min read",
+      "category": "Industry Insights",
+      "url": "https://petapixel.com/2026/11/17/a-portrait-photographer-puts-6-common-ai-retouching-myths-to-the-test/",
+      "excerpt": "Photographers have plenty of reasons to distrust automatic retouching. We asked Joe Fraga, a portrait photographer in Salvador, Brazil, to test six of the most common ones on real client work and see which still hold up.…",
+      "keyPoints": [
+        "Published by PetaPixel under Industry Insights",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
+    {
+      "id": "boudoir-imagen-black-friday-2026-try-intelligent-s",
+      "title": "Imagen Black Friday 2026: Try Intelligent Studio With a $5 First Month of Limitless",
+      "source": "SLR Lounge",
+      "sourceIcon": "S",
+      "date": "Nov 17, 2026",
+      "rawDate": "2026-11-17T19:04:31.000Z",
+      "readTime": "9 min read",
+      "category": "Industry Insights",
+      "url": "https://www.slrlounge.com/imagen-black-friday-2026-try-intelligent-studio-with-a-5-first-month-of-limitless/",
+      "excerpt": "Imagen’s Black Friday 2026 sale runs from November 9 through December 4. New, trial and returning photographers can get their first month of the Limitless plan for $5 on the new Imagen Intelligent Studio, including unlim…",
+      "keyPoints": [
+        "Published by SLR Lounge under Industry Insights",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
+    {
+      "id": "boudoir-reblum-adds-eye-teeth-and-backdrop-tools-p",
+      "title": "Reblum Adds Eye, Teeth and Backdrop Tools, Plus Up to 50% Off for Black Friday",
+      "source": "SLR Lounge",
+      "sourceIcon": "S",
+      "date": "Nov 17, 2026",
+      "rawDate": "2026-11-17T19:04:24.000Z",
+      "readTime": "8 min read",
+      "category": "Industry Insights",
+      "url": "https://www.slrlounge.com/reblum-adds-eye-teeth-and-backdrop-tools-plus-up-to-50-off-for-black-friday/",
+      "excerpt": "Reblum, the AI portrait retouching app for Mac and Windows, has added a set of new tools for eyes, teeth, backdrops and group photos. For Black Friday, the Lifetime license is $124, down from $249, and the Annual plan dr…",
+      "keyPoints": [
+        "Published by SLR Lounge under Industry Insights",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
+    {
+      "id": "boudoir-defining-leading-lines-in-photography-with",
+      "title": "Defining Leading Lines in Photography (with 20+ Examples!)",
+      "source": "SLR Lounge",
+      "sourceIcon": "S",
+      "date": "Nov 17, 2026",
+      "rawDate": "2026-11-17T18:40:40.000Z",
+      "readTime": "5 min read",
+      "category": "Lighting & Gear",
+      "url": "https://www.slrlounge.com/leading-lines-photography-examples/",
+      "excerpt": "See how photographers in our Lighting community took on the Leading Lines feature challenge!",
+      "keyPoints": [
+        "Published by SLR Lounge under Lighting & Gear",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
+    {
+      "id": "boudoir-4-reasons-the-85mm-is-perfect-for-portrait",
+      "title": "4 Reasons the 85mm is Perfect for Portraits & How to Use It",
+      "source": "SLR Lounge",
+      "sourceIcon": "S",
+      "date": "Nov 17, 2026",
+      "rawDate": "2026-11-17T18:02:14.000Z",
+      "readTime": "6 min read",
+      "category": "Lighting & Gear",
+      "url": "https://www.slrlounge.com/85-mm-prime-lens-perfect-portrait-photography-how-to-use-it/",
+      "excerpt": "In this video, Pye gives four reasons why the 85mm prime lens has become a staple in a portrait photographer's toolkit and he also shares how to use it.",
+      "keyPoints": [
+        "Published by SLR Lounge under Lighting & Gear",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
+    {
+      "id": "boudoir-imagen-s-newest-update-lets-you-edit-by-vo",
+      "title": "Imagen's Newest Update Lets You Edit By Voice or Text",
+      "source": "Fstoppers",
+      "sourceIcon": "F",
+      "date": "Nov 17, 2026",
+      "rawDate": "2026-11-17T17:03:02.000Z",
+      "readTime": "9 min read",
+      "category": "Posing & Direction",
+      "url": "https://fstoppers.com/artificial-intelligence/imagens-newest-update-lets-edit-voice-or-text-905479?utm_source=fstoppers&utm_medium=RSS&utm_campaign=rss_feed_articles",
+      "excerpt": "Most wedding and event photographers lose a surprising amount of time editing the same handful of sliders photo after photo. Each tiny adjustment only takes a second, but across a full gallery, those seconds can add hour…",
+      "keyPoints": [
+        "Published by Fstoppers under Posing & Direction",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
+    {
+      "id": "boudoir-vsco-studio-pro-brings-presets-and-streaml",
+      "title": "VSCO Studio Pro Brings Presets and Streamlined Editing to macOS",
+      "source": "PetaPixel",
+      "sourceIcon": "P",
+      "date": "Nov 17, 2026",
+      "rawDate": "2026-11-17T17:00:27.000Z",
+      "readTime": "6 min read",
+      "category": "Industry Insights",
+      "url": "https://petapixel.com/2026/11/17/vsco-studio-pro-brings-presets-and-streamlined-editing-to-macos/",
+      "excerpt": "When VSCO launched its next-generation editing experience, Studio Pro, on iOS in June, it promised a macOS version later this year. Later is now, and VSCO Studio Pro Desktop is here. [Read More]",
+      "keyPoints": [
+        "Published by PetaPixel under Industry Insights",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
+    {
+      "id": "boudoir-why-there-s-no-best-portrait-lighting-setu",
+      "title": "Why There's No Best Portrait Lighting Setup, and What to Decide Instead",
+      "source": "Fstoppers",
+      "sourceIcon": "F",
+      "date": "Nov 17, 2026",
+      "rawDate": "2026-11-17T14:03:02.000Z",
+      "readTime": "8 min read",
+      "category": "Lighting & Gear",
+      "url": "https://fstoppers.com/education/why-theres-no-best-portrait-lighting-setup-and-what-decide-instead-905562?utm_source=fstoppers&utm_medium=RSS&utm_campaign=rss_feed_articles",
+      "excerpt": "Search for the best portrait lighting setup and you'll find hundreds of diagrams, each one confidently showing exactly where the softbox and reflector go. Copying one can get you a decent frame on a good day, but it leav…",
+      "keyPoints": [
+        "Published by Fstoppers under Lighting & Gear",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
+    {
+      "id": "boudoir-wealthy-scammers-are-posing-as-fine-art-ph",
+      "title": "Wealthy Scammers are Posing as ‘Fine Art Photographers’ to Gain Entry to the UK",
+      "source": "PetaPixel",
+      "sourceIcon": "P",
+      "date": "Nov 17, 2026",
+      "rawDate": "2026-11-17T13:09:08.000Z",
+      "readTime": "7 min read",
+      "category": "Posing & Direction",
+      "url": "https://petapixel.com/2026/11/17/wealthy-scammers-are-posing-as-fine-art-photographers-to-gain-entry-to-the-uk/",
+      "excerpt": "Companies are offering people fake fine art photography portfolios, along with fabricated exhibitions and media coverage, to help them pose as professional photographers and secure U.K. talent visas. [Read More]",
+      "keyPoints": [
+        "Published by PetaPixel under Posing & Direction",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
     {
       "id": "boudoir-flow-posing-mastery",
       "title": "Mastering Boudoir Flow Posing: How to Create 50 Looks from a Single Chair",
       "source": "Fstoppers",
       "sourceIcon": "F",
-      "date": "October 12, 2026",
+      "date": "Oct 12, 2026",
       "readTime": "7 min read",
       "category": "Posing & Direction",
-      "author": "Editorial Photo Staff",
       "url": "https://fstoppers.com",
       "excerpt": "Why exhausting clients with complex pose changes ruins the mood. Learn how micro-movements, angle shifts, and natural breathing create seamless editorial variety without disrupting comfort.",
       "keyPoints": [
@@ -26,10 +217,9 @@
       "title": "Chiaroscuro & Cinematic Lighting: Moving Past the Overdone White Sheet Look",
       "source": "Rangefinder Magazine",
       "sourceIcon": "R",
-      "date": "October 10, 2026",
+      "date": "Oct 10, 2026",
       "readTime": "9 min read",
       "category": "Lighting & Gear",
-      "author": "Lindsay Adler & Rangefinder Editorial",
       "url": "https://rangefinderonline.com",
       "excerpt": "How modern intimate portraiture is taking inspiration from Hollywood film noir and high-fashion editorial. Sculpting the human form using gridded stripboxes, rim lighting, and warm tungsten spotlights.",
       "keyPoints": [
@@ -43,10 +233,9 @@
       "title": "The Psychology of Client Safety: How to Eliminate Posing Anxiety Before the Shoot",
       "source": "SLR Lounge",
       "sourceIcon": "S",
-      "date": "October 7, 2026",
+      "date": "Oct 7, 2026",
       "readTime": "6 min read",
       "category": "Client Confidence",
-      "author": "SLR Lounge Team",
       "url": "https://slrlounge.com",
       "excerpt": "Boudoir photography is 80% psychology and 20% camera work. Why creating clear boundaries, zero-pressure consultations, and same-day reveals transforms client self-perception and confidence.",
       "keyPoints": [
@@ -60,152 +249,15 @@
       "title": "The Anti-Boudoir Wardrobe: Why Oversized Blazers and Leather Are Replacing Frilly Lace",
       "source": "Shotkit",
       "sourceIcon": "SK",
-      "date": "October 4, 2026",
+      "date": "Oct 4, 2026",
       "readTime": "5 min read",
       "category": "Editorial & Styling",
-      "author": "Shotkit Editorial Desk",
       "url": "https://shotkit.com",
       "excerpt": "The commercial boudoir industry has evolved. Discover how tailored menswear, distressed vintage leather moto jackets, and crisp cotton oxfords empower clients far more than traditional lingerie.",
       "keyPoints": [
         "Heavy fabrics like leather and wool provide a psychological 'armor' that boosts confidence",
         "High contrast between bare skin and structured tailoring creates magazine-worthy lines",
         "Encourage clients to bring pieces that reflect their everyday signature aesthetic"
-      ]
-    },
-    {
-      "id": "boudoir-boudoir-photography-helped-me-fall-in-lo",
-      "title": "Boudoir photography helped me fall in love with my own body – now I help other women feel the same about theirs [NSFW]",
-      "source": "Amateur Photographer",
-      "sourceIcon": "A",
-      "date": "July 7, 2026",
-      "rawDate": "Tue, 07 Jul 2026 07:00:00 GMT",
-      "readTime": "6 min read",
-      "category": "Client Confidence",
-      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNYUZsZURqOGlncGdacmt5cW0yaks0aTlQWlVub3loVG9kejFTSThMM3I1NUpPMHYtanhxVjZqUEF4eHNsVTB0ek9uYXR4VFFLQlhXSGJQNmU0TWgzaktrazdmd25vTzZRZWM0cExnS0x2Y1Jta2dvVWlXb3hybEpMaTM3MzdNZjFpWTVESHBQUDRMTTdlQnQtdmpCeW82d0dsUmIwX2szVHlRWUlTVDQ4ZnljWU1qbjh6cFRWbnA1QzFRSnJqWlFWUVItMWVkQmowc3BFX3BJSnFpS1JVbmp3RDIxQ2g2ZW1HX0JVMjBTdlpzYkJSRklaWg?oc=5",
-      "excerpt": "Boudoir photography helped me fall in love with my own body – now I help other women feel the same about theirs [NSFW] Amateur Photographer",
-      "keyPoints": [
-        "Published coverage by Amateur Photographer",
-        "Key themes explore client confidence and contemporary client presentation",
-        "Direct reporting on empowering artistic workflows and creative boundary setting"
-      ]
-    },
-    {
-      "id": "boudoir-boudoir-photography-has-a-branding-probl",
-      "title": "Boudoir Photography Has a Branding Problem (And Most of Us Caused It)",
-      "source": "Fstoppers",
-      "sourceIcon": "F",
-      "date": "March 27, 2026",
-      "rawDate": "Fri, 27 Mar 2026 07:00:00 GMT",
-      "readTime": "5 min read",
-      "category": "Industry Insights",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPaVltMHVvODc5NzlNUURvQkpFaUttY2RHRTBWcEdlM0h5SE11elN4LVE5TkxjVVFZamRkdGp3RnEzZjNJYkpmN3VkNlVxR1JWWndmT08xYllNenhpWTFEN2FHdkZxYlZMLWlhaUJrWUtuMVBEMFJPMzJBeFp5alo0WXBRZW44OG8tREdnVzNrWWFYY3ZGc1JFUXNRUQ?oc=5",
-      "excerpt": "Boudoir Photography Has a Branding Problem (And Most of Us Caused It) Fstoppers",
-      "keyPoints": [
-        "Published coverage by Fstoppers",
-        "Key themes explore industry insights and contemporary client presentation",
-        "Direct reporting on empowering artistic workflows and creative boundary setting"
-      ]
-    },
-    {
-      "id": "boudoir-meet-nursah-wood",
-      "title": "Meet Nursah Wood",
-      "source": "Bold Journey Magazine",
-      "sourceIcon": "B",
-      "date": "June 10, 2026",
-      "rawDate": "Wed, 10 Jun 2026 07:00:00 GMT",
-      "readTime": "4 min read",
-      "category": "Industry Insights",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1IWUFSYmVvTVZWWVFPajh1N3ZaS0lMZzUyeE53UWEwcURlbkdJdHNzN0VraVc3SGZsaHN2LXNkcHJJekRkLVZPdG1SOGhQX1hrNWI0?oc=5",
-      "excerpt": "Meet Nursah Wood Bold Journey Magazine",
-      "keyPoints": [
-        "Published coverage by Bold Journey Magazine",
-        "Key themes explore industry insights and contemporary client presentation",
-        "Direct reporting on empowering artistic workflows and creative boundary setting"
-      ]
-    },
-    {
-      "id": "boudoir-eli-boudoir-named-the-best-choice-for-bo",
-      "title": "ELI Boudoir Named the Best Choice for Boudoir Photography in Los Angeles",
-      "source": "The National Law Review",
-      "sourceIcon": "T",
-      "date": "June 11, 2026",
-      "rawDate": "Thu, 11 Jun 2026 19:45:34 GMT",
-      "readTime": "5 min read",
-      "category": "Industry Insights",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOM3JpS1o4WFV5RmE3LThpRUU5NXRldm9OLVZFSTNVVnlIbDZ1dGI5bkdoVUtYUEtvc2NQaDgtb1ljbmpNSW9ZY0ZMd1lfbE1HemZuamNCSkI2dHp5Qi0ybVlVSlJfXzBDMHh2bmFhRk10M1FWYWFXdlkwVFpNOUlnOVVBYUt1WU1HYUw5eDdlU3Z6TU84Q0tReU9LNmRGc1JkNXZr?oc=5",
-      "excerpt": "ELI Boudoir Named the Best Choice for Boudoir Photography in Los Angeles The National Law Review",
-      "keyPoints": [
-        "Published coverage by The National Law Review",
-        "Key themes explore industry insights and contemporary client presentation",
-        "Direct reporting on empowering artistic workflows and creative boundary setting"
-      ]
-    },
-    {
-      "id": "boudoir-boudoir-photography-13-pro-secrets-for-c",
-      "title": "Boudoir photography: 13 pro secrets for capturing tasteful portraits with fine-art flair",
-      "source": "Yahoo Tech",
-      "sourceIcon": "Y",
-      "date": "June 27, 2026",
-      "rawDate": "Sat, 27 Jun 2026 07:00:00 GMT",
-      "readTime": "5 min read",
-      "category": "Industry Insights",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRGR2bHZVeUZLWEpyeTBDTFZueTg3emotY1dSVXIwYWt1eUxidTB4c3diamZMSFp2UXJSOG1DcjhJak1lTkoweEZsYjBERW1NUXFfSGxfa1ZNRE92RnpaSTkwcTM1UXZjbXJibUcxYnlYSXdLRHBuZkx5Mm1UUjlrWENoZ1ZNNTdmVERjMHA3aVZmXzg?oc=5",
-      "excerpt": "Boudoir photography: 13 pro secrets for capturing tasteful portraits with fine-art flair Yahoo Tech",
-      "keyPoints": [
-        "Published coverage by Yahoo Tech",
-        "Key themes explore industry insights and contemporary client presentation",
-        "Direct reporting on empowering artistic workflows and creative boundary setting"
-      ]
-    },
-    {
-      "id": "boudoir-sonoma-county-boudoir-photographer-jg-bo",
-      "title": "Sonoma County Boudoir Photographer JG Boudoir Celebrates 11 Years of Helping Women See Themselves at Their Best",
-      "source": "PR.com",
-      "sourceIcon": "P",
-      "date": "May 20, 2026",
-      "rawDate": "Wed, 20 May 2026 07:00:00 GMT",
-      "readTime": "6 min read",
-      "category": "Industry Insights",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8xejJVYTZBQVF6aGp2QmJHcXd2QlBFNjhvTjFNay04NHI5d2JvaXA2TnBoSy1zdFdjdEdkNmptTjRfWDRmN1hSOE1KRjc3R1J2?oc=5",
-      "excerpt": "Sonoma County Boudoir Photographer JG Boudoir Celebrates 11 Years of Helping Women See Themselves at Their Best PR.com",
-      "keyPoints": [
-        "Published coverage by PR.com",
-        "Key themes explore industry insights and contemporary client presentation",
-        "Direct reporting on empowering artistic workflows and creative boundary setting"
-      ]
-    },
-    {
-      "id": "boudoir-maryland-man-posed-as-women-to-steal-pri",
-      "title": "Maryland Man Posed As Women To Steal Private Boudoir Photos, State Police Say",
-      "source": "DailyVoice.com",
-      "sourceIcon": "D",
-      "date": "July 3, 2026",
-      "rawDate": "Fri, 03 Jul 2026 07:00:00 GMT",
-      "readTime": "5 min read",
-      "category": "Posing & Direction",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNlZLaFVJMXdac2VXd3BLRUw2Ny1hWllUT3pnVFNUbnJDc1dydllOMHVBTXNjZURwSlI3TWFTZldpTXJQcDBiSXpwU2VLel81Z2F1U182c241b3dOU005UmNFRDhLaGFLSktJWnNwTDBXR196SVBiZlZWRGN3MjY0NG9DTElMcFRlQVNZV1FNdDFJQ0NHOFZ5dTZuQjNsOFBsSEtzM25sd0k5V09Z?oc=5",
-      "excerpt": "Maryland Man Posed As Women To Steal Private Boudoir Photos, State Police Say DailyVoice.com",
-      "keyPoints": [
-        "Published coverage by DailyVoice.com",
-        "Key themes explore posing & direction and contemporary client presentation",
-        "Direct reporting on empowering artistic workflows and creative boundary setting"
-      ]
-    },
-    {
-      "id": "boudoir-the-boudoir-experience-redefining-confid",
-      "title": "The Boudoir Experience Redefining Confidence and Beauty in Los Angeles",
-      "source": "LA Weekly",
-      "sourceIcon": "L",
-      "date": "June 16, 2026",
-      "rawDate": "Tue, 16 Jun 2026 07:00:00 GMT",
-      "readTime": "5 min read",
-      "category": "Client Confidence",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQMzFkcWJNdUUtUVl4enc0UFd3UDlOT1FDTnNyZ21lWE9SejZBUUpFSFdzOE5DZXFPQ0pOOWlKZVp2N3V4MkxUcVFieDNyZnBFZ1FnaXpCWWtOT3lIc0h2a1M4aGhkOVlRMWdhTVhJanB2eXY5azd5V09POE40MHFxeWtNNTEwRXVzWXhsSEw5WkJpT3A1NGJaZ3p4N3U?oc=5",
-      "excerpt": "The Boudoir Experience Redefining Confidence and Beauty in Los Angeles LA Weekly",
-      "keyPoints": [
-        "Published coverage by LA Weekly",
-        "Key themes explore client confidence and contemporary client presentation",
-        "Direct reporting on empowering artistic workflows and creative boundary setting"
       ]
     }
   ]
