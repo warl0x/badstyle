@@ -1,9 +1,137 @@
 {
-  "lastScraped": "Nov 18, 2026",
-  "timestamp": "2026-11-18T13:29:35.808Z",
+  "lastScraped": "Nov 23, 2026",
+  "timestamp": "2026-11-23T20:50:27.484Z",
   "syncFrequency": "Updated Weekly via GitHub Actions",
   "articleCount": 16,
   "articles": [
+    {
+      "id": "boudoir-understanding-generative-restyle-and-relig",
+      "title": "Understanding Generative Restyle and Relight in Photoshop",
+      "source": "Fstoppers",
+      "sourceIcon": "F",
+      "date": "Nov 23, 2026",
+      "rawDate": "2026-11-23T17:03:01.000Z",
+      "readTime": "9 min read",
+      "category": "Lighting & Gear",
+      "url": "https://fstoppers.com/photoshop/understanding-generative-restyle-and-relight-photoshop-905549?utm_source=fstoppers&utm_medium=RSS&utm_campaign=rss_feed_articles",
+      "excerpt": "The only time I use Photoshop these days is on those rare occasions when Lightroom can't handle my editing and retouching needs. At this year's Adobe MAX, three tools were announced to give photographers more control ove…",
+      "keyPoints": [
+        "Published by Fstoppers under Lighting & Gear",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
+    {
+      "id": "boudoir-how-the-chiefs-team-photographer-lights-po",
+      "title": "How the Chiefs' Team Photographer Lights Portraits in Open Shade and Full Sun",
+      "source": "Fstoppers",
+      "sourceIcon": "F",
+      "date": "Nov 23, 2026",
+      "rawDate": "2026-11-23T14:03:02.000Z",
+      "readTime": "9 min read",
+      "category": "Lighting & Gear",
+      "url": "https://fstoppers.com/education/how-chiefs-team-photographer-lights-portraits-open-shade-and-full-sun-905634?utm_source=fstoppers&utm_medium=RSS&utm_campaign=rss_feed_articles",
+      "excerpt": "Shooting portraits on location means you rarely get to pick your light, and a dim tunnel, an industrial corner in full sun, and a patch of open shade can all show up within the same hour. Bringing Westcott's FJ strobes i…",
+      "keyPoints": [
+        "Published by Fstoppers under Lighting & Gear",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
+    {
+      "id": "boudoir-why-photos-from-sigma-s-85mm-f-1-2-are-get",
+      "title": "Why Photos From Sigma's 85mm f/1.2 Are Getting Mistaken for AI",
+      "source": "Fstoppers",
+      "sourceIcon": "F",
+      "date": "Nov 23, 2026",
+      "rawDate": "2026-11-23T12:03:02.000Z",
+      "readTime": "8 min read",
+      "category": "Lighting & Gear",
+      "url": "https://fstoppers.com/gear/why-photos-sigmas-85mm-f12-are-getting-mistaken-ai-905633?utm_source=fstoppers&utm_medium=RSS&utm_campaign=rss_feed_articles",
+      "excerpt": "An 85mm f/1.2 is one of the most sought-after portrait lenses you can own, and for Sony E and L-mount, autofocus options at that focal length have mostly stopped at f/1.4. The extra brightness changes how a face separate…",
+      "keyPoints": [
+        "Published by Fstoppers under Lighting & Gear",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
+    {
+      "id": "boudoir-4-fixes-for-black-and-white-portraits-that",
+      "title": "4 Fixes for Black and White Portraits That Look Flat",
+      "source": "Fstoppers",
+      "sourceIcon": "F",
+      "date": "Nov 22, 2026",
+      "rawDate": "2026-11-22T14:03:01.000Z",
+      "readTime": "8 min read",
+      "category": "Lighting & Gear",
+      "url": "https://fstoppers.com/education/4-fixes-black-and-white-portraits-look-flat-905630?utm_source=fstoppers&utm_medium=RSS&utm_campaign=rss_feed_articles",
+      "excerpt": "Converting a portrait to black and white is supposed to make it feel classic and timeless, but often the result just looks flat. Once color is gone, the image has to carry its mood through light, tonality, expression, an…",
+      "keyPoints": [
+        "Published by Fstoppers under Lighting & Gear",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
+    {
+      "id": "boudoir-is-acdsee-photo-studio-ultimate-2027-worth",
+      "title": "Is ACDSee Photo Studio Ultimate 2027 Worth It for Working Photographers?",
+      "source": "Fstoppers",
+      "sourceIcon": "F",
+      "date": "Nov 21, 2026",
+      "rawDate": "2026-11-21T19:03:01.000Z",
+      "readTime": "9 min read",
+      "category": "Industry Insights",
+      "url": "https://fstoppers.com/reviews/acdsee-photo-studio-ultimate-2027-worth-it-working-photographers-905611?utm_source=fstoppers&utm_medium=RSS&utm_campaign=rss_feed_articles",
+      "excerpt": "If you pay for Adobe's photography bundle every month, ACDSee Photo Studio Ultimate 2027 deserves a look. This new release packs a ton of new generative AI features along with some fancy culling options too. I reviewed a…",
+      "keyPoints": [
+        "Published by Fstoppers under Industry Insights",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
+    {
+      "id": "boudoir-ai-retouching-where-should-wedding-photogr",
+      "title": "AI Retouching: Where Should Wedding Photographers Draw the Line?",
+      "source": "SLR Lounge",
+      "sourceIcon": "S",
+      "date": "Nov 21, 2026",
+      "rawDate": "2026-11-21T00:08:43.000Z",
+      "readTime": "9 min read",
+      "category": "Industry Insights",
+      "url": "https://www.slrlounge.com/ai-retouching-where-should-wedding-photographers-draw-the-line/",
+      "excerpt": "When a couple opens their gallery, they’re looking for the day they actually lived, not a better-looking version of someone else’s. That’s the tension every wedding photographer now sits inside. AI can wipe out a distrac…",
+      "keyPoints": [
+        "Published by SLR Lounge under Industry Insights",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
+    {
+      "id": "boudoir-led-lighting-for-videographers-is-now-chea",
+      "title": "LED Lighting For Videographers Is Now Cheap And Incredible",
+      "source": "Fstoppers",
+      "sourceIcon": "F",
+      "date": "Nov 20, 2026",
+      "rawDate": "2026-11-20T20:27:58.000Z",
+      "readTime": "9 min read",
+      "category": "Lighting & Gear",
+      "url": "https://fstoppers.com/gear/led-lighting-videographers-now-cheap-and-incredible-905612?utm_source=fstoppers&utm_medium=RSS&utm_campaign=rss_feed_articles",
+      "excerpt": "It seems like every six months, cameras and lenses get more expensive. Lighting is the one part of the photo industry where prices keep falling, and every time I check new products, the prices are lower and the feature l…",
+      "keyPoints": [
+        "Published by Fstoppers under Lighting & Gear",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
+    {
+      "id": "boudoir-why-the-same-lens-at-the-same-aperture-can",
+      "title": "Why the Same Lens at the Same Aperture Can Look Completely Different",
+      "source": "Fstoppers",
+      "sourceIcon": "F",
+      "date": "Nov 20, 2026",
+      "rawDate": "2026-11-20T14:03:01.000Z",
+      "readTime": "9 min read",
+      "category": "Lighting & Gear",
+      "url": "https://fstoppers.com/education/why-same-lens-same-aperture-can-look-completely-different-905607?utm_source=fstoppers&utm_medium=RSS&utm_campaign=rss_feed_articles",
+      "excerpt": "Plenty of photographers think background blur is a bit lazy, a way to hide the background and make a portrait look expensive, and often, it is. Knowing when a wide aperture adds something and when it only smears the back…",
+      "keyPoints": [
+        "Published by Fstoppers under Lighting & Gear",
+        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
+      ]
+    },
     {
       "id": "boudoir-aftershoot-vs-narrative-ai-culling-and-edi",
       "title": "Aftershoot vs Narrative: AI Culling and Editing Compared",
@@ -21,178 +149,50 @@
       ]
     },
     {
-      "id": "boudoir-why-your-portraits-look-soft-even-with-gre",
-      "title": "Why Your Portraits Look Soft Even With Great Gear",
-      "source": "Fstoppers",
-      "sourceIcon": "F",
-      "date": "Nov 18, 2026",
-      "rawDate": "2026-11-18T10:03:02.000Z",
-      "readTime": "9 min read",
-      "category": "Lighting & Gear",
-      "url": "https://fstoppers.com/education/why-your-portraits-look-soft-even-great-gear-905572?utm_source=fstoppers&utm_medium=RSS&utm_campaign=rss_feed_articles",
-      "excerpt": "Soft eyes, a face that's slightly blurred, and skin that looks a little green in Lightroom are easy to overlook on a rear screen and hard to ignore once you're editing at full size. Most of those problems trace back to a…",
-      "keyPoints": [
-        "Published by Fstoppers under Lighting & Gear",
-        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
-      ]
-    },
-    {
-      "id": "boudoir-in-1839-a-philadelphian-took-one-of-the-fi",
-      "title": "In 1839, a Philadelphian Took One of the First Selfies Ever Made",
-      "source": "Fstoppers",
-      "sourceIcon": "F",
-      "date": "Nov 17, 2026",
-      "rawDate": "2026-11-17T22:03:02.000Z",
-      "readTime": "9 min read",
-      "category": "Lighting & Gear",
-      "url": "https://fstoppers.com/historical/1839-philadelphian-took-one-first-selfies-ever-made-904535?utm_source=fstoppers&utm_medium=RSS&utm_campaign=rss_feed_articles",
-      "excerpt": "A young man with tousled hair, a popped collar, and his arms loosely folded stares just past the lens, caught mid-thought in the daylight of a Philadelphia backyard. The plate is a daguerreotype, made in the fall of 1839…",
-      "keyPoints": [
-        "Published by Fstoppers under Lighting & Gear",
-        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
-      ]
-    },
-    {
-      "id": "boudoir-a-portrait-photographer-puts-6-common-ai-r",
-      "title": "A Portrait Photographer Puts 6 Common AI Retouching Myths to the Test",
-      "source": "PetaPixel",
-      "sourceIcon": "P",
-      "date": "Nov 17, 2026",
-      "rawDate": "2026-11-17T21:56:01.000Z",
-      "readTime": "7 min read",
-      "category": "Industry Insights",
-      "url": "https://petapixel.com/2026/11/17/a-portrait-photographer-puts-6-common-ai-retouching-myths-to-the-test/",
-      "excerpt": "Photographers have plenty of reasons to distrust automatic retouching. We asked Joe Fraga, a portrait photographer in Salvador, Brazil, to test six of the most common ones on real client work and see which still hold up.…",
-      "keyPoints": [
-        "Published by PetaPixel under Industry Insights",
-        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
-      ]
-    },
-    {
-      "id": "boudoir-imagen-black-friday-2026-try-intelligent-s",
-      "title": "Imagen Black Friday 2026: Try Intelligent Studio With a $5 First Month of Limitless",
-      "source": "SLR Lounge",
+      "id": "boudoir-picwish-ai-review-can-it-replace-studio-pr",
+      "title": "PicWish AI Review: Can It Replace Studio Product Photography for E-Commerce?",
+      "source": "Shotkit",
       "sourceIcon": "S",
       "date": "Nov 17, 2026",
-      "rawDate": "2026-11-17T19:04:31.000Z",
-      "readTime": "9 min read",
+      "rawDate": "2026-11-17T20:00:48.000Z",
+      "readTime": "6 min read",
       "category": "Industry Insights",
-      "url": "https://www.slrlounge.com/imagen-black-friday-2026-try-intelligent-studio-with-a-5-first-month-of-limitless/",
-      "excerpt": "Imagen’s Black Friday 2026 sale runs from November 9 through December 4. New, trial and returning photographers can get their first month of the Limitless plan for $5 on the new Imagen Intelligent Studio, including unlim…",
+      "url": "https://shotkit.com/picwish-ai-review/",
+      "excerpt": "Discover PicWish AI, the AI image editor that aims to provide studio-level product pictures without the hassle or expense of a studio shoot.",
       "keyPoints": [
-        "Published by SLR Lounge under Industry Insights",
+        "Published by Shotkit under Industry Insights",
         "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
       ]
     },
     {
-      "id": "boudoir-reblum-adds-eye-teeth-and-backdrop-tools-p",
-      "title": "Reblum Adds Eye, Teeth and Backdrop Tools, Plus Up to 50% Off for Black Friday",
-      "source": "SLR Lounge",
+      "id": "boudoir-road-trip-posing-guide-10-creative-poses-i",
+      "title": "Road Trip Posing Guide: 10 Creative Poses Inside & Around Your Car",
+      "source": "Shotkit",
       "sourceIcon": "S",
-      "date": "Nov 17, 2026",
-      "rawDate": "2026-11-17T19:04:24.000Z",
-      "readTime": "8 min read",
-      "category": "Industry Insights",
-      "url": "https://www.slrlounge.com/reblum-adds-eye-teeth-and-backdrop-tools-plus-up-to-50-off-for-black-friday/",
-      "excerpt": "Reblum, the AI portrait retouching app for Mac and Windows, has added a set of new tools for eyes, teeth, backdrops and group photos. For Black Friday, the Lifetime license is $124, down from $249, and the Annual plan dr…",
+      "date": "Nov 12, 2026",
+      "rawDate": "2026-11-12T20:00:19.000Z",
+      "readTime": "5 min read",
+      "category": "Posing & Direction",
+      "url": "https://shotkit.com/road-trip-posing-guide/",
+      "excerpt": "Make vacations more memorable with these creative poses for road trip photos taken in and around your car.",
       "keyPoints": [
-        "Published by SLR Lounge under Industry Insights",
+        "Published by Shotkit under Posing & Direction",
         "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
       ]
     },
     {
-      "id": "boudoir-defining-leading-lines-in-photography-with",
-      "title": "Defining Leading Lines in Photography (with 20+ Examples!)",
-      "source": "SLR Lounge",
+      "id": "boudoir-how-realistically-does-relight-ai-repositi",
+      "title": "How Realistically Does Relight AI Reposition Studio Lights?",
+      "source": "Shotkit",
       "sourceIcon": "S",
-      "date": "Nov 17, 2026",
-      "rawDate": "2026-11-17T18:40:40.000Z",
+      "date": "Nov 10, 2026",
+      "rawDate": "2026-11-10T20:00:59.000Z",
       "readTime": "5 min read",
       "category": "Lighting & Gear",
-      "url": "https://www.slrlounge.com/leading-lines-photography-examples/",
-      "excerpt": "See how photographers in our Lighting community took on the Leading Lines feature challenge!",
+      "url": "https://shotkit.com/relight-ai-studio-lights/",
+      "excerpt": "Discover Relight AI, an AI-powered tool designed to improve lighting, fix shadows, and adjust exposure in photographs.",
       "keyPoints": [
-        "Published by SLR Lounge under Lighting & Gear",
-        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
-      ]
-    },
-    {
-      "id": "boudoir-4-reasons-the-85mm-is-perfect-for-portrait",
-      "title": "4 Reasons the 85mm is Perfect for Portraits & How to Use It",
-      "source": "SLR Lounge",
-      "sourceIcon": "S",
-      "date": "Nov 17, 2026",
-      "rawDate": "2026-11-17T18:02:14.000Z",
-      "readTime": "6 min read",
-      "category": "Lighting & Gear",
-      "url": "https://www.slrlounge.com/85-mm-prime-lens-perfect-portrait-photography-how-to-use-it/",
-      "excerpt": "In this video, Pye gives four reasons why the 85mm prime lens has become a staple in a portrait photographer's toolkit and he also shares how to use it.",
-      "keyPoints": [
-        "Published by SLR Lounge under Lighting & Gear",
-        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
-      ]
-    },
-    {
-      "id": "boudoir-imagen-s-newest-update-lets-you-edit-by-vo",
-      "title": "Imagen's Newest Update Lets You Edit By Voice or Text",
-      "source": "Fstoppers",
-      "sourceIcon": "F",
-      "date": "Nov 17, 2026",
-      "rawDate": "2026-11-17T17:03:02.000Z",
-      "readTime": "9 min read",
-      "category": "Posing & Direction",
-      "url": "https://fstoppers.com/artificial-intelligence/imagens-newest-update-lets-edit-voice-or-text-905479?utm_source=fstoppers&utm_medium=RSS&utm_campaign=rss_feed_articles",
-      "excerpt": "Most wedding and event photographers lose a surprising amount of time editing the same handful of sliders photo after photo. Each tiny adjustment only takes a second, but across a full gallery, those seconds can add hour…",
-      "keyPoints": [
-        "Published by Fstoppers under Posing & Direction",
-        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
-      ]
-    },
-    {
-      "id": "boudoir-vsco-studio-pro-brings-presets-and-streaml",
-      "title": "VSCO Studio Pro Brings Presets and Streamlined Editing to macOS",
-      "source": "PetaPixel",
-      "sourceIcon": "P",
-      "date": "Nov 17, 2026",
-      "rawDate": "2026-11-17T17:00:27.000Z",
-      "readTime": "6 min read",
-      "category": "Industry Insights",
-      "url": "https://petapixel.com/2026/11/17/vsco-studio-pro-brings-presets-and-streamlined-editing-to-macos/",
-      "excerpt": "When VSCO launched its next-generation editing experience, Studio Pro, on iOS in June, it promised a macOS version later this year. Later is now, and VSCO Studio Pro Desktop is here. [Read More]",
-      "keyPoints": [
-        "Published by PetaPixel under Industry Insights",
-        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
-      ]
-    },
-    {
-      "id": "boudoir-why-there-s-no-best-portrait-lighting-setu",
-      "title": "Why There's No Best Portrait Lighting Setup, and What to Decide Instead",
-      "source": "Fstoppers",
-      "sourceIcon": "F",
-      "date": "Nov 17, 2026",
-      "rawDate": "2026-11-17T14:03:02.000Z",
-      "readTime": "8 min read",
-      "category": "Lighting & Gear",
-      "url": "https://fstoppers.com/education/why-theres-no-best-portrait-lighting-setup-and-what-decide-instead-905562?utm_source=fstoppers&utm_medium=RSS&utm_campaign=rss_feed_articles",
-      "excerpt": "Search for the best portrait lighting setup and you'll find hundreds of diagrams, each one confidently showing exactly where the softbox and reflector go. Copying one can get you a decent frame on a good day, but it leav…",
-      "keyPoints": [
-        "Published by Fstoppers under Lighting & Gear",
-        "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
-      ]
-    },
-    {
-      "id": "boudoir-wealthy-scammers-are-posing-as-fine-art-ph",
-      "title": "Wealthy Scammers are Posing as ‘Fine Art Photographers’ to Gain Entry to the UK",
-      "source": "PetaPixel",
-      "sourceIcon": "P",
-      "date": "Nov 17, 2026",
-      "rawDate": "2026-11-17T13:09:08.000Z",
-      "readTime": "7 min read",
-      "category": "Posing & Direction",
-      "url": "https://petapixel.com/2026/11/17/wealthy-scammers-are-posing-as-fine-art-photographers-to-gain-entry-to-the-uk/",
-      "excerpt": "Companies are offering people fake fine art photography portfolios, along with fabricated exhibitions and media coverage, to help them pose as professional photographers and secure U.K. talent visas. [Read More]",
-      "keyPoints": [
-        "Published by PetaPixel under Posing & Direction",
+        "Published by Shotkit under Lighting & Gear",
         "Curated automatically via Badstyle weekly multi-feed RSS aggregator"
       ]
     },
