@@ -72,17 +72,6 @@ const SITE_DATA = {
         aspectRatio: "0.667"
       },
       {
-        id: "p_badstyle_9",
-        title: "Frame 9762",
-        category: "People & Portrait",
-        year: "2026",
-        thumb: "images/portraits/thumbs/DSC09762-Edit.webp",
-        src: "images/portraits/full/DSC09762-Edit.webp",
-        width: 1152,
-        height: 2048,
-        aspectRatio: "0.562"
-      },
-      {
         id: "p_badstyle_10",
         title: "Portrait 0130",
         category: "People & Portrait",
@@ -160,17 +149,6 @@ const SITE_DATA = {
         aspectRatio: "0.667"
       },
       {
-        id: "p_badstyle_17",
-        title: "Portrait 1913",
-        category: "People & Portrait",
-        year: "2026",
-        thumb: "images/portraits/thumbs/IMG_1913-Edit.webp",
-        src: "images/portraits/full/IMG_1913-Edit.webp",
-        width: 1366,
-        height: 2048,
-        aspectRatio: "0.667"
-      },
-      {
         id: "p_badstyle_18",
         title: "Portrait 2524",
         category: "People & Portrait",
@@ -221,17 +199,6 @@ const SITE_DATA = {
         year: "2026",
         thumb: "images/portraits/thumbs/IMG_3096.webp",
         src: "images/portraits/full/IMG_3096.webp",
-        width: 1365,
-        height: 2048,
-        aspectRatio: "0.667"
-      },
-      {
-        id: "p_badstyle_23",
-        title: "Portrait 3564",
-        category: "People & Portrait",
-        year: "2026",
-        thumb: "images/portraits/thumbs/IMG_3564.webp",
-        src: "images/portraits/full/IMG_3564.webp",
         width: 1365,
         height: 2048,
         aspectRatio: "0.667"
